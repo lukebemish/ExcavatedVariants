@@ -1,0 +1,559 @@
+/* 
+ * Copyright (c) 2024 Luke Bemish and contributors.
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * This file contains the stone types and ores from the Mo' Shiz mod by profit_orange.
+ * The following ores have been removed from this file due to unclean texture generation by the Excavated Variants mod: citrine, mithril, foulite, and pyridium.
+ */
+
+{
+    mod_id: 'ms',
+    provided_stones: [
+        {
+            block_id: 'ms:stone/limestone',
+            types: [
+                'stone',
+            ],
+            id: 'ms_stone_limestone',
+            lang: {
+                en_us: 'Limestone',
+            },
+        },
+        {
+            block_id: 'ms:stone/marble',
+            types: [
+                'stone',
+            ],
+            id: 'ms_stone_marble',
+            lang: {
+                en_us: 'Marble',
+            },
+        },
+        {
+            block_id: 'ms:stone/peridotite',
+            types: [
+                'stone',
+            ],
+            id: 'ms_stone_peridotite',
+            lang: {
+                en_us: 'Peridotite',
+            },
+        },
+    ],
+    provided_ores: [
+        {
+            id: 'ms_amazonite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/amazonite',
+                'ms:ore/deepslate_amazonite',
+            ],
+            lang: {
+                en_us: 'Amazonite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_aquamarine_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/aquamarine',
+                'ms:ore/deepslate_aquamarine',
+            ],
+            lang: {
+                en_us: 'Aquamarine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_black_diamond_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/black_diamond',
+                'ms:ore/deepslate_black_diamond',
+            ],
+            lang: {
+                en_us: 'Black Diamond Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_chromite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/chromite',
+                'ms:ore/deepslate_chromite',
+            ],
+            lang: {
+                en_us: 'Chromite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_cobalt_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/cobalt',
+                'ms:ore/deepslate_cobalt',
+            ],
+            lang: {
+                en_us: 'Cobalt Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_demonite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/demonite',
+                'ms:ore/deepslate_demonite',
+            ],
+            lang: {
+                en_us: 'Demonite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_jade_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/jade',
+                'ms:ore/deepslate_jade',
+            ],
+            lang: {
+                en_us: 'Jade Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_jet_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/jet',
+                'ms:ore/deepslate_jet',
+            ],
+            lang: {
+                en_us: 'Jet Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_olivine_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/olivine',
+                'ms:ore/deepslate_olivine',
+            ],
+            lang: {
+                en_us: 'Olivine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_onyx_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/onyx',
+                'ms:ore/deepslate_onyx',
+            ],
+            lang: {
+                en_us: 'Onyx Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_opal_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/opal',
+                'ms:ore/deepslate_opal',
+            ],
+            lang: {
+                en_us: 'Opal Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_platinum_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/platinum',
+                'ms:ore/deepslate_platinum',
+            ],
+            lang: {
+                en_us: 'Platinum Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_potassium_nitrate_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/potassium_nitrate',
+                'ms:ore/deepslate_potassium_nitrate',
+            ],
+            lang: {
+                en_us: 'Potassium Nitrate Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_ruby_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/ruby',
+                'ms:ore/deepslate_ruby',
+            ],
+            lang: {
+                en_us: 'Ruby Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_sapphire_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/sapphire',
+                'ms:ore/deepslate_sapphire',
+            ],
+            lang: {
+                en_us: 'Sapphire Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_scarlet_emerald_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/scarlet_emerald',
+                'ms:ore/deepslate_scarlet_emerald',
+            ],
+            lang: {
+                en_us: 'Scarlet Emerald Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_silver_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/silver',
+                'ms:ore/deepslate_silver',
+            ],
+            lang: {
+                en_us: 'Silver Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_sulfur_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/sulfur',
+                'ms:ore/deepslate_sulfur',
+            ],
+            lang: {
+                en_us: 'Sulfur Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_tanzanite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/tanzanite',
+                'ms:ore/deepslate_tanzanite',
+            ],
+            lang: {
+                en_us: 'Tanzanite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_tin_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/tin',
+                'ms:ore/deepslate_tin',
+            ],
+            lang: {
+                en_us: 'Tin Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_titanium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/titanium',
+                'ms:ore/deepslate_titanium',
+            ],
+            lang: {
+                en_us: 'Titanium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_topaz_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/topaz',
+                'ms:ore/deepslate_topaz',
+            ],
+            lang: {
+                en_us: 'Topaz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_turquoise_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/turquoise',
+                'ms:ore/deepslate_turquoise',
+            ],
+            lang: {
+                en_us: 'Turquoise Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_uranium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/uranium',
+                'ms:ore/deepslate_uranium',
+            ],
+            lang: {
+                en_us: 'Uranium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_white_opal_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'ms:ore/white_opal',
+                'ms:ore/deepslate_white_opal',
+            ],
+            lang: {
+                en_us: 'White Opal Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'ms_hellfire_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'ms:ore/hellfire',
+            ],
+            lang: {
+                en_us: 'Hellfire Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'ms_linium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'ms:ore/linium',
+            ],
+            lang: {
+                en_us: 'Linium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'ms_neridium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'ms:ore/neridium',
+            ],
+            lang: {
+                en_us: 'Neridium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'ms_triterium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'ms:ore/triterium',
+            ],
+            lang: {
+                en_us: 'Triterium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'ms_tungsten_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'ms:ore/tungsten',
+            ],
+            lang: {
+                en_us: 'Tungsten Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'ms_violium_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'ms:ore/violium',
+            ],
+            lang: {
+                en_us: 'Violium Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+    ],
+}
