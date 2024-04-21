@@ -1,0 +1,2209 @@
+/*
+ * Copyright (c) 2024 Luke Bemish and contributors.
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * The ores go in the following order alphabetically: Overworld, Nether, End.  
+ * The overworld ores fall under one of three categories: stone layer exclusive, deepslate layer exclusive, or both layers.
+ */
+
+{
+    mod_id: 'crystalcraft_unlimited_java',
+    provided_stones: [],
+    provided_ores: [
+        {
+            id: 'crystalcraft_unlimited_java_alexandrite_ore',
+            orename: 'alexandrite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:alexandrite_ore',
+                'crystalcraft_unlimited_java:deepslate_alexandrite_ore',
+            ],
+            lang: {
+                en_us: 'Alexandrite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_aluminium_ore',
+            orename: 'aluminium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:aluminium_ore',
+                'crystalcraft_unlimited_java:deepslate_aluminium_ore',
+            ],
+            lang: {
+                en_us: 'Aluminium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_amazonite_ore',
+            orename: 'amazonite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:amazonite_ore',
+            ],
+            lang: {
+                en_us: 'Amazonite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_amber_ore',
+            orename: 'amber_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:amber_ore',
+                'crystalcraft_unlimited_java:deepslate_amber_ore',
+            ],
+            lang: {
+                en_us: 'Amber Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_americium_ore',
+            orename: 'americium_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:americium_ore',
+            ],
+            lang: {
+                en_us: 'Americium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_amethyst_ore',
+            orename: 'amethyst_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:amethyst_ore',
+                'crystalcraft_unlimited_java:deepslate_ametyst_ore',
+            ],
+            lang: {
+                en_us: 'Amethyst Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_ametrine_ore',
+            orename: 'ametrine_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:ametrine_ore',
+                'crystalcraft_unlimited_java:deepslate_ametrine_ore',
+            ],
+            lang: {
+                en_us: 'Ametrine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_ammolite_ore',
+            orename: 'ammolite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:ammolite_ore',
+                'crystalcraft_unlimited_java:deepslate_ammolite_ore',
+            ],
+            lang: {
+                en_us: 'Ammolite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_aqua_sapphire_ore',
+            orename: 'aqua_sapphire_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:saphire_ore',
+                'crystalcraft_unlimited_java:deepslate_sapphire_ore',
+            ],
+            lang: {
+                en_us: 'Aqua Sapphire Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_aquamarine_ore',
+            orename: 'aquamarine_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:aquamarine_ore',
+                'crystalcraft_unlimited_java:deepslate_aquamarine_ore',
+            ],
+            lang: {
+                en_us: 'Aquamarine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_australian_sapphire_ore',
+            orename: 'australian_sapphire_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:australian_sapphire_ore',
+            ],
+            lang: {
+                en_us: 'Australian Sapphire Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_bismuth_ore',
+            orename: 'bisumth_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:bismuth_ore',
+            ],
+            lang: {
+                en_us: 'Bismuth Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_black_oopal_ore',
+            orename: 'black_opal_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:black_opal_ore',
+                'crystalcraft_unlimited_java:deepslate_black_opal_ore',
+            ],
+            lang: {
+                en_us: 'Black Opal Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_bronze_ore',
+            orename: 'bronze_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:bronze_ore',
+            ],
+            lang: {
+                en_us: 'Bronze Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_cadmium_ore',
+            orename: 'cadmium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_cadmium_ore',
+            ],
+            lang: {
+                en_us: 'Cadmium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_chalcanthite_ore',
+            orename: 'chalcanthite_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:chalcanthite_ore',
+            ],
+            lang: {
+                en_us: 'Chalcanthite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_chloronium_ore',
+            orename: 'chloronium_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:chloronium_ore',
+            ],
+            lang: {
+                en_us: 'Chloronium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_chrome_ore',
+            orename: 'chrome_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:chrome_ore',
+            ],
+            lang: {
+                en_us: 'Chrome Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_chrysolite_ore',
+            orename: 'chrysolite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:chrysolite_ore',
+                'crystalcraft_unlimited_java:deepslate_chrysolite_ore',
+            ],
+            lang: {
+                en_us: 'Chrysolite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_cinnabar_ore',
+            orename: 'cinnabar_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:cinnabar_ore',
+            ],
+            lang: {
+                en_us: 'Cinnabar Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_citrine_ore',
+            orename: 'citrine_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:citrine_ore',
+                'crystalcraft_unlimited_java:deepslate_citrine_ore',
+            ],
+            lang: {
+                en_us: 'Citrine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_cyan_emerald_ore',
+            orename: 'cyan_emerald_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:cyan_emerald_ore',
+            ],
+            lang: {
+                en_us: 'Cyan Emerald Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_flourite_ore',
+            orename: 'flourite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:flourite_ore',
+                'crystalcraft_unlimited_java:deepslate_flourite_ore',
+            ],
+            lang: {
+                en_us: 'Flourite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_fluorite_ore',
+            orename: 'fluorite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:fluorite_ore',
+            ],
+            lang: {
+                en_us: 'Fluorite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_garnet_ore',
+            orename: 'garnet_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:garnet_ore',
+                'crystalcraft_unlimited_java:deepslate_garnet_ore',
+            ],
+            lang: {
+                en_us: 'Garnet Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_goshenite_ore',
+            orename: 'goshenite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:goshenite_ore',
+            ],
+            lang: {
+                en_us: 'Goshenite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_grandidierite_ore',
+            orename: 'grandidierite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:grandidierite_ore',
+                'crystalcraft_unlimited_java:deepslate_grand_ore',
+            ],
+            lang: {
+                en_us: 'Grandidierite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_hackmantite_ore',
+            orename: 'hackmantite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:hackmantite_ore',
+            ],
+            lang: {
+                en_us: 'Hackmantite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_hercynite_ore',
+            orename: 'hercynite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:hercynite_ore',
+            ],
+            lang: {
+                en_us: 'Hercynite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_holmium_ore',
+            orename: 'holmium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:holmium_ore',
+            ],
+            lang: {
+                en_us: 'Holmium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_indigolite_ore',
+            orename: 'indigolite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:indigolite_ore',
+            ],
+            lang: {
+                en_us: 'Indigolite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_indium_ore',
+            orename: 'indium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:indium_ore',
+            ],
+            lang: {
+                en_us: 'Indium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_iolite_ore',
+            orename: 'iolite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:iolite_ore',
+            ],
+            lang: {
+                en_us: 'Iolite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_iridium_ore',
+            orename: 'iridium_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:iridium_ore',
+            ],
+            lang: {
+                en_us: 'Iridium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_iris_agate_ore',
+            orename: 'iris_agate_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:iris_agate_ore',
+            ],
+            lang: {
+                en_us: 'Iris Agate Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_jade_ore',
+            orename: 'jade_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:jade_ore',
+                'crystalcraft_unlimited_java:deepslate_jade_ore',
+            ],
+            lang: {
+                en_us: 'Jade Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_jasper_ore',
+            orename: 'jasper_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:jasper_ore',
+            ],
+            lang: {
+                en_us: 'Jasper Agate Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_kunzite_ore',
+            orename: 'kunzite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:kunzite_ore',
+            ],
+            lang: {
+                en_us: 'Kunzite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_labradorite_ore',
+            orename: 'labradorite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:labradorite_ore',
+            ],
+            lang: {
+                en_us: 'Labradorite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_lead_ore',
+            orename: 'lead_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:lead_ore',
+            ],
+            lang: {
+                en_us: 'Lead Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_lithium_ore',
+            orename: 'lithium_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:lithium_ore',
+            ],
+            lang: {
+                en_us: 'Lithium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_magnesium_ore',
+            orename: 'magnesium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:magnesium_ore',
+                'crystalcraft_unlimited_java:deepslate_magnesium_ore',
+            ],
+            lang: {
+                en_us: 'Magnesium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_malachite_ore',
+            orename: 'malachite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:malachite_ore',
+                'crystalcraft_unlimited_java:deepslate_malachite_ore',
+            ],
+            lang: {
+                en_us: 'Malachite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_manganese_ore',
+            orename: 'manganese_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_manganese_ore',
+            ],
+            lang: {
+                en_us: 'Manganese Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_matizium_ore',
+            orename: 'matizium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:matizium_ore',
+                'crystalcraft_unlimited_java:deepslate_matizium_ore',
+            ],
+            lang: {
+                en_us: 'Matizium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_matrix_opal_ore',
+            orename: 'matrix_opal_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:matrix_ore',
+            ],
+            lang: {
+                en_us: 'Matrix Opal Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_medusa_quartz_ore',
+            orename: 'medusa_quartz_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:medusa_quartz_ore',
+            ],
+            lang: {
+                en_us: 'Medusa Quartz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_molybdenum_ore',
+            orename: 'molybdenum_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:molybdenum_ore',
+            ],
+            lang: {
+                en_us: 'Molybdenum Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_nickel_ore',
+            orename: 'nickel_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:nickel_ore',
+            ],
+            lang: {
+                en_us: 'Nickel Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_niobium_ore',
+            orename: 'niobium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_niobium_ore',
+            ],
+            lang: {
+                en_us: 'Niobium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_olivine_ore',
+            orename: 'olivine_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:olivine_ore',
+            ],
+            lang: {
+                en_us: 'Olivine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_onyx_ore',
+            orename: 'onyx_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:onyx_ore',
+            ],
+            lang: {
+                en_us: 'Onyx Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_opal_ore',
+            orename: 'opal_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:opal_ore',
+                'crystalcraft_unlimited_java:deepslate_opal_ore',
+            ],
+            lang: {
+                en_us: 'Opal Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_osmium_ore',
+            orename: 'osmium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:osmium_ore',
+            ],
+            lang: {
+                en_us: 'Osmium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_palintinium_ore',
+            orename: 'palintinium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:palintinium_ore',
+            ],
+            lang: {
+                en_us: 'Palintinium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_peacock_ore',
+            orename: 'peacock_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:peacock_ore_block',
+            ],
+            lang: {
+                en_us: 'Peacock Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_peacock_topaz_ore',
+            orename: 'peacock_topaz_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:peacock_topaz_ore',
+            ],
+            lang: {
+                en_us: 'Peacock Topaz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_peridot_ore',
+            orename: 'peridot_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:peridot_ore',
+                'crystalcraft_unlimited_java:deepslate_peridot_ore',
+            ],
+            lang: {
+                en_us: 'Peridot Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_pink_ruby_ore',
+            orename: 'pink_ruby_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:pink_ruby_ore',
+            ],
+            lang: {
+                en_us: 'Pink Ruby Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_pitambari_neelam_ore',
+            orename: 'pitambari_neelam_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:pitambari_neelam_ore',
+            ],
+            lang: {
+                en_us: 'Pitambari Neelam Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_platinum_ore',
+            orename: 'platinum_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:platinum_ore',
+                'crystalcraft_unlimited_java:deepslate_platinum_ore',
+            ],
+            lang: {
+                en_us: 'Platinum Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_prism_ore',
+            orename: 'prism_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:prism_ore',
+                'crystalcraft_unlimited_java:deepslate_prism_ore',
+            ],
+            lang: {
+                en_us: 'Prism Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_quicksilver_ore',
+            orename: 'quicksilver_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:quicksilver_ore',
+            ],
+            lang: {
+                en_us: 'Quicksilver Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rare_amethyst_ore',
+            orename: 'rare_amethyst_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rare_amethyst_ore',
+            ],
+            lang: {
+                en_us: 'Rare Amethyst Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rare_citrine_ore',
+            orename: 'rare_citrine_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rare_citrine_ore',
+            ],
+            lang: {
+                en_us: 'Rare Citrine Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rare_sapphire_ore',
+            orename: 'rare_sapphire_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rare_sapphire_ore',
+                'crystalcraft_unlimited_java:rare_deepslate_sapphire_ore',
+            ],
+            lang: {
+                en_us: 'Rare Sapphire Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rare_tanzanite_ore',
+            orename: 'rare_tanzanite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rare_tanzanite_ore',
+            ],
+            lang: {
+                en_us: 'Rare Tanzanite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_raspberry_diamond_ore',
+            orename: 'raspberry_diamond_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:raspberry_diamond_ore',
+            ],
+            lang: {
+                en_us: 'Raspberry Diamond Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rhodium_ore',
+            orename: 'rhodium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_rhodium_block',
+            ],
+            lang: {
+                en_us: 'Rhodium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rose_quartz_ore',
+            orename: 'rose_quartz_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rose_quartz_ore',
+            ],
+            lang: {
+                en_us: 'Rose Quartz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_ruby_ore',
+            orename: 'ruby_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:ruby_ore',
+                'crystalcraft_unlimited_java:deepslate_ruby_ore',
+            ],
+            lang: {
+                en_us: 'Ruby Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_ruthenium_ore',
+            orename: 'ruthenium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_ruthenium_ore',
+            ],
+            lang: {
+                en_us: 'Ruthenium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rutile_ore',
+            orename: 'rutile_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rutile_ore',
+            ],
+            lang: {
+                en_us: 'Rutile Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sapphire_ore',
+            orename: 'aqua_sapphire_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sapphire_ore',
+                'crystalcraft_unlimited_java:deepslate_saphire_ore',
+            ],
+            lang: {
+                en_us: 'Sapphire Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sardonyx_ore',
+            orename: 'sardonyx_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sardonyx_ore',
+                'crystalcraft_unlimited_java:deepslate_sardonyx_ore',
+            ],
+            lang: {
+                en_us: 'Sardonyx Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_scandium_ore',
+            orename: 'scandium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:scandium_ore',
+            ],
+            lang: {
+                en_us: 'Scandium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_silicon_ore',
+            orename: 'silicon_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:silicium_ore',
+            ],
+            lang: {
+                en_us: 'Silicon Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_silver_ore',
+            orename: 'silver_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:silver_ore',
+                'crystalcraft_unlimited_java:deepslate_silver_ore',
+            ],
+            lang: {
+                en_us: 'Silver Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_smoky_quartz_ore',
+            orename: 'silicium_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:smoky_quartz_ore',
+            ],
+            lang: {
+                en_us: 'Smoky Quartz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sonoranite_ore',
+            orename: 'sonoranite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sonoranite_ore',
+            ],
+            lang: {
+                en_us: 'Sonoranite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_spinel_ore',
+            orename: 'spinel_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:spinel_ore',
+                'crystalcraft_unlimited_java:deepslate_spinel_ore',
+            ],
+            lang: {
+                en_us: 'Spinel Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_stibnite_ore',
+            orename: 'stibnite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:stibnite_ore',
+            ],
+            lang: {
+                en_us: 'Stibnite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sugillite_ore',
+            orename: 'sugillite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sugillite_ore',
+                'crystalcraft_unlimited_java:deepslate_sugillite_ore',
+            ],
+            lang: {
+                en_us: 'Sugillite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sunset_jasper_ore',
+            orename: 'sunset_jasper_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sunset_jasper_ore',
+            ],
+            lang: {
+                en_us: 'Sunset Jasper Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_tantalum_ore',
+            orename: 'tantalum_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_tantalum_ore',
+            ],
+            lang: {
+                en_us: 'Tantalum Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_tanzanite_ore',
+            orename: 'tanzanite_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:tanzanite_ore',
+                'crystalcraft_unlimited_java:deepslate_tanzanite_ore',
+            ],
+            lang: {
+                en_us: 'Tanzanite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_technetium_ore',
+            orename: 'technetium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_technetium_ore',
+            ],
+            lang: {
+                en_us: 'Technetium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_thorium_ore',
+            orename: 'thorium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:thorium_ore',
+            ],
+            lang: {
+                en_us: 'Thorium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_tin_ore',
+            orename: 'tin_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:tin_ore',
+            ],
+            lang: {
+                en_us: 'Tin Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_titanium_ore',
+            orename: 'titanium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:titanium_ore',
+                'crystalcraft_unlimited_java:deepslate_titanium_ore',
+            ],
+            lang: {
+                en_us: 'Titanium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_topaz_ore',
+            orename: 'topaz_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:topaz_ore',
+                'crystalcraft_unlimited_java:deepslate_topaz_ore',
+            ],
+            lang: {
+                en_us: 'Topaz Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_tourmaline_ore',
+            orename: 'tourmaline_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:tourmaline_ore',
+                'crystalcraft_unlimited_java:deepslate_tourmaline_ore',
+            ],
+            lang: {
+                en_us: 'Tourmaline Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_tungsten_ore',
+            orename: 'tungsten_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:tungsten_ore',
+            ],
+            lang: {
+                en_us: 'Tungsten Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_turquoise_ore',
+            orename: 'turquoise_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:turquoise_ore',
+            ],
+            lang: {
+                en_us: 'Turquoise Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_uranium_ore',
+            orename: 'uranium_ore',
+            stone: [
+                'stone',
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:uranium_ore',
+                'crystalcraft_unlimited_java:deepslate_uranium_ore',
+            ],
+            lang: {
+                en_us: 'Uranium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_vanadium_ore',
+            orename: 'vanadium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_vanadium_ore',
+            ],
+            lang: {
+                en_us: 'Vanadium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_vesuvianite_ore',
+            orename: 'vesuvianite_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:vesuvianite_ore',
+            ],
+            lang: {
+                en_us: 'Vesuvianite Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_watermelon_tourmaline_ore',
+            orename: 'watermelon_tourmaline_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:watermelon_tourmaline_ore',
+            ],
+            lang: {
+                en_us: 'Watermelon Tourmaline Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_yellow_onyx_ore',
+            orename: 'yellow_onyx_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:yellow_onyx_ore',
+            ],
+            lang: {
+                en_us: 'Yellow Onyx Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_yttrium_ore',
+            orename: 'yttrium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:yttrium_ore',
+            ],
+            lang: {
+                en_us: 'Yttrium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_zinc_ore',
+            orename: 'zinc_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:zinc_ore',
+            ],
+            lang: {
+                en_us: 'Zinc Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_zircon_ore',
+            orename: 'zircon_ore',
+            stone: [
+                'stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:zircon_ore',
+            ],
+            lang: {
+                en_us: 'Zircon Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_zirconium_ore',
+            orename: 'zirconium_ore',
+            stone: [
+                'deepslate',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:deepslate_zirconium_ore',
+            ],
+            lang: {
+                en_us: 'Zirconium Ore',
+            },
+            types: [
+                'stone',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_bixbite_ore',
+            orename: 'bixbite_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:bixbite_ore',
+            ],
+            lang: {
+                en_us: 'Bixbite Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_bloodstone_ore',
+            orename: 'bloodstone_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:bloodstone_ore',
+            ],
+            lang: {
+                en_us: 'Bloodstone Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_catseye_ore',
+            orename: 'catseye_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:catseye_ore',
+            ],
+            lang: {
+                en_us: 'Catseye Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_fire_opal_ore',
+            orename: 'fire_opal_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:fire_opal_ore',
+            ],
+            lang: {
+                en_us: 'Fire Opal Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_green_catseye_ore',
+            orename: 'green_catseye_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:green_catseye_ore',
+            ],
+            lang: {
+                en_us: 'Green Catseye Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_orange_diamond_ore',
+            orename: 'orange_diamond_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:orange_diamond_ore',
+            ],
+            lang: {
+                en_us: 'Orange Diamond Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_palladium_ore',
+            orename: 'palladium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:palladium_ore',
+            ],
+            lang: {
+                en_us: 'Palladium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_pelenium_ore',
+            orename: 'pelenium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:pelenium_ore',
+            ],
+            lang: {
+                en_us: 'Pelenium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_pyrite_ore',
+            orename: 'pyrite_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:pyrite_ore',
+            ],
+            lang: {
+                en_us: 'Pyrite Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_red_diamond_ore',
+            orename: 'red_diamond_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:red_diamond_ore',
+            ],
+            lang: {
+                en_us: 'Red Diamond Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_seaborgium_ore',
+            orename: 'seaborgium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:seaborgium_ore',
+            ],
+            lang: {
+                en_us: 'Seaborgium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sulfur_ore',
+            orename: 'sulfur_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sulfur_ore',
+            ],
+            lang: {
+                en_us: 'Sulfur Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_sunstone_ore',
+            orename: 'sunstone_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:sunstone_ore',
+            ],
+            lang: {
+                en_us: 'Sunstone Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_yurium_ore',
+            orename: 'yurium_ore',
+            stone: [
+                'netherrack',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:yurium_ore',
+            ],
+            lang: {
+                en_us: 'Yurium Ore',
+            },
+            types: [
+                'nether',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_bluestone_ore',
+            orename: 'bluestone_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:bluestone_ore',
+            ],
+            lang: {
+                en_us: 'Bluestone Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_cobalt_ore',
+            orename: 'cobalt_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:cobalt_ore',
+            ],
+            lang: {
+                en_us: 'Cobalt Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_cyber_crystal_ore',
+            orename: 'cyber_crystal_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:cyber_crystal_ore',
+            ],
+            lang: {
+                en_us: 'Cyber Crystal Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_enderium_ore',
+            orename: 'enderium_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:enderium_ore',
+            ],
+            lang: {
+                en_us: 'Enderium Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_europium_ore',
+            orename: 'europium_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:europium_ore',
+            ],
+            lang: {
+                en_us: 'Europium Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_larimar_ore',
+            orename: 'larimar_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:larimar_ore',
+            ],
+            lang: {
+                en_us: 'Larimar Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_maradonyx_ore',
+            orename: 'maradonyx_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:maradonyx_ore',
+            ],
+            lang: {
+                en_us: 'Maradonyx Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_moonstone_ore',
+            orename: 'moonstone_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:moonstone_ore',
+            ],
+            lang: {
+                en_us: 'Moonstone Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_obsidian_ore',
+            orename: 'obsidian_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:obsidian_ore',
+            ],
+            lang: {
+                en_us: 'Obsidian Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_orichalcum_ore',
+            orename: 'orichalcum_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:orichalcum_ore',
+            ],
+            lang: {
+                en_us: 'Orichalcum Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_pottasium_ore',
+            orename: 'pottasium_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:pottasium_ore',
+            ],
+            lang: {
+                en_us: 'Pottasium Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_purple_diamond_ore',
+            orename: 'purple_diamond_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:purple_diamond_ore',
+            ],
+            lang: {
+                en_us: 'Purple Diamond Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_rhodonite_ore',
+            orename: 'rhodonite_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:rhodonite_ore',
+            ],
+            lang: {
+                en_us: 'Rhodonite Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_serpentine_ore',
+            orename: 'serpentine_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:serpentine_ore',
+            ],
+            lang: {
+                en_us: 'Serpentine Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_white_diamond_ore',
+            orename: 'white_diamond_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:white_diamond_ore',
+            ],
+            lang: {
+                en_us: 'White Diamond Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+        {
+            id: 'crystalcraft_unlimited_java_xernium_ore',
+            orename: 'xernium_ore',
+            stone: [
+                'end_stone',
+            ],
+            block_id: [
+                'crystalcraft_unlimited_java:xernium_ore',
+            ],
+            lang: {
+                en_us: 'Xernium Ore',
+            },
+            types: [
+                'end',
+            ],
+        },
+    ],
+}
