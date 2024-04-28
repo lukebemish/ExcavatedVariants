@@ -1,0 +1,5 @@
+loom {
+    mixin {
+        useLegacyMixinAp = false
+    }
+}
