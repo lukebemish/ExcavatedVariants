@@ -4,27 +4,18 @@ pluginManagement {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
-
-        maven {
-            name = 'Quilt (Release)'
-            url = 'https://maven.quiltmc.org/repository/release'
-        }
-
         maven {
             name = 'NeoForged'
             url = 'https://maven.neoforged.net/'
         }
-
         maven {
             name = "Luke's Maven"
-            url = 'https://maven.lukebemish.dev/releases'
+            url = 'https://maven.lukebemish.dev/releases/'
         }
-
         maven {
             name = 'ParchmentMC'
             url = 'https://maven.parchmentmc.org'
         }
-
         maven {
             name = 'Architectury'
             url "https://maven.architectury.dev/"
@@ -36,49 +27,37 @@ pluginManagement {
 }
 
 plugins {
-    id 'com.gradle.enterprise' version '3.16.1'
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
-}
-
-gradleEnterprise {
-    if (System.getenv('CI') != null) {
-        buildScan {
-            publishAlways()
-            termsOfServiceUrl = "https://gradle.com/terms-of-service"
-            termsOfServiceAgree = "yes"
-        }
-    }
-}
-
-buildCache {
-    if (providers.gradleProperty('buildCacheUrl').orNull) {
-        remote(HttpBuildCache) {
-            url = providers.gradleProperty('buildCacheUrl').orNull
-            credentials {
-                username = providers.gradleProperty('buildCacheUser').orNull
-                password = providers.gradleProperty('buildCachePassword').orNull
-            }
-            if (providers.gradleProperty('buildCachePush').orNull) {
-                push = true
-            } else {
-                push = false
-            }
-        }
-    } else if (System.getenv('BUILD_CACHE_URL')) {
-        remote(HttpBuildCache) {
-            url = System.getenv('BUILD_CACHE_URL')
-            credentials {
-                username = System.getenv('BUILD_CACHE_USER')
-                password = System.getenv('BUILD_CACHE_PASSWORD')
-            }
-            if (System.getenv('BUILD_CACHE_PUSH') || System.getenv('CI')) {
-                push = true
-            } else {
-                push = false
-            }
-        }
-    }
+    id 'dev.lukebemish.conventions' version '0.1.9'
+    id 'dev.lukebemish.multisource' version '0.1.7'
 }
 
 rootProject.name = 'excavatedvariants'
-include("common", "neoforge", "fabriquilt")
+
+multisource.of(':') {
+    configureEach {
+        minecraft.add project.libs.minecraft
+        mappings.add loom.layered() {
+            officialMojangMappings()
+            parchment(project.dependencies.variantOf(project.libs.parchment) {
+                artifactType('zip')
+            })
+        }
+    }
+    common('main', []) {}
+    fabric('fabric', ['main']) {}
+    neoforge('neoforge', ['main']) {
+        neoForge.add project.libs.neoforge
+    }
+    repositories {
+        // Forge repo doesn't mirror central right...
+        it.removeIf { it.name == 'Forge' }
+        maven {
+            name = 'ParchmentMC'
+            url = 'https://maven.parchmentmc.org'
+        }
+        maven {
+            name = 'Quilt (Release)'
+            url = 'https://maven.quiltmc.org/repository/release'
+        }
+    }
+}

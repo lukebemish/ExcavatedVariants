@@ -1,8 +1,12 @@
+import me.modmuss50.mpp.ReleaseType
+
 plugins {
-    alias libs.plugins.quilt.licenser apply false
-    alias libs.plugins.mdg.plugin
+    id 'maven-publish'
+    id 'signing'
+    id 'java-library'
     alias libs.plugins.managedversioning
-    alias libs.plugins.architectury.loom apply false
+    alias libs.plugins.modsdotgroovy
+    alias libs.plugins.modpublish
 }
 
 managedVersioning {
@@ -17,9 +21,9 @@ managedVersioning {
             workflowDispatch.set(true)
             onBranches.add '1.*'
             gradleJob {
-                buildCache()
                 name.set 'build'
-                gradlew 'Build', 'checkLicenses', 'build'
+                javaVersion.set '21'
+                gradlew 'Build', 'build'
                 gradlew 'Publish', 'publish'
                 mavenSnapshot('github')
             }
@@ -28,18 +32,39 @@ managedVersioning {
             prettyName.set 'Release'
             workflowDispatch.set(true)
             gradleJob {
-                buildCache()
                 name.set 'build'
+                javaVersion.set '21'
+                buildCache()
                 step {
                     setupGitUser()
                 }
                 readOnly.set false
                 gradlew 'Tag Release', 'tagRelease'
-                gradlew 'Build', 'checkLicenses', 'build'
+                gradlew 'Build', 'build'
                 step {
                     run.set 'git push && git push --tags'
                 }
-                gradlew 'Publish', 'publish', 'modrinth', 'curseforge'
+                recordVersion 'Record Version', 'version'
+                mavenRelease('github')
+                modPublishing()
+            }
+            gradleJob {
+                name.set 'publish'
+                javaVersion.set '21'
+                buildCache()
+                needs.add('build')
+                tag.set('${{needs.build.outputs.version}}')
+                gradlew 'Publish', 'publish'
+                mavenRelease('github')
+                modPublishing()
+            }
+            gradleJob {
+                name.set 'publishMod'
+                javaVersion.set '21'
+                buildCache()
+                needs.add('build')
+                tag.set('${{needs.build.outputs.version}}')
+                gradlew 'Publish', 'publishMods'
                 mavenRelease('github')
                 modPublishing()
             }
@@ -49,7 +74,8 @@ managedVersioning {
             pullRequest.set(true)
             gradleJob {
                 name.set 'build'
-                gradlew 'Build', 'checkLicenses', 'build'
+                javaVersion.set '21'
+                gradlew 'Build', 'build'
                 gradlew 'Publish', 'publish'
                 pullRequestArtifact()
             }
@@ -58,7 +84,7 @@ managedVersioning {
             prettyName.set 'Publish PR'
             publishPullRequestAction(
                     'github',
-                    'dev/lukebemish/dynamicassetgenerator/dynamicassetgenerator-*',
+                    "${project.group.replace('.', '/')}/${project.name}",
                     'Build PR'
             )
         }
@@ -69,52 +95,197 @@ managedVersioning.apply()
 
 println "Building: $version"
 
-configurations {
-    license {
-        canBeResolved = false
-        canBeConsumed = true
-    }
-}
-
-artifacts {
-    add 'license', file("LICENSE")
-}
-
 modsDotGroovy {
-    dslVersion = libs.versions.mdg.dsl.get()
-    platform 'multiloader'
-    multiloader {
-        forge = [project(':neoforge')]
-        fabric = [project(':fabriquilt')]
-        quilt = [project(':fabriquilt')]
+    multiplatform.expose()
+    gather {
+        projectProperty('mod_id')
+        projectProperty('mod_name')
     }
 }
 
-subprojects { p ->
-    apply plugin: 'maven-publish'
-    apply plugin: 'java-library'
-    apply plugin: libs.plugins.quilt.licenser.get().pluginId
+sourceSets.neoforge.modsDotGroovy {
+    platform = org.groovymc.modsdotgroovy.core.Platform.NEOFORGE
+    inferGather.set false
+    multiplatform.from(':', 'main')
+    gather {
+        minecraftVersion = libs.versions.minecraft.get()
+        platformVersion = libs.versions.neoforge.get()
+    }
+    enable()
+}
 
-    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
-    java.withSourcesJar()
-    java.withJavadocJar()
+sourceSets.fabric.modsDotGroovy {
+    platform = org.groovymc.modsdotgroovy.core.Platform.FABRIC
+    inferGather.set false
+    multiplatform.from(':', 'main')
+    gather {
+        minecraftVersion = libs.versions.minecraft.get()
+        platformVersion = libs.versions.fabric.loader.get()
+    }
+    enable()
+}
 
-    license {
-        rule rootProject.file('header.txt')
-        exclude '**/*.mcmeta'
-        exclude '**/package-info.java'
+dependencies {
+    compileOnly cLibs.bundles.compileonly
+    annotationProcessor cLibs.bundles.annotationprocessor
+    compileOnly libs.fabric.mixin
+    compileOnly libs.mixinextras.common
+    compileOnly libs.dynassetgen
+    compileOnly libs.defaultresources
+
+    fabricCompileOnly cLibs.bundles.compileonly
+    fabricAnnotationProcessor cLibs.bundles.annotationprocessor
+
+    // So we can compile against it
+    fabricCompileOnly libs.quilt.loader
+
+    modFabricImplementation libs.fabric.loader
+    modFabricImplementation libs.fabric.api
+    modFabricImplementation(libs.dynassetgen) {
+        capabilities {
+            requireCapability 'dev.lukebemish:dynamicassetgenerator-fabric'
+        }
+    }
+    modFabricImplementation(libs.defaultresources) {
+        capabilities {
+            requireCapability 'dev.lukebemish:defaultresources-fabric'
+        }
+    }
+    fabricInclude(libs.defaultresources) {
+        capabilities {
+            requireCapability 'dev.lukebemish:defaultresources-fabric'
+        }
     }
 
-    jar {
+    neoforgeCompileOnly cLibs.bundles.compileonly
+    neoforgeAnnotationProcessor cLibs.bundles.annotationprocessor
+    neoforgeImplementation(libs.dynassetgen) {
+        capabilities {
+            requireCapability 'dev.lukebemish:dynamicassetgenerator-neoforge'
+        }
+    }
+    neoforgeImplementation(libs.defaultresources) {
+        capabilities {
+            requireCapability 'dev.lukebemish:defaultresources-neoforge'
+        }
+    }
+    neoforgeInclude(libs.defaultresources) {
+        capabilities {
+            requireCapability 'dev.lukebemish:defaultresources-neoforge'
+        }
+    }
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+    registerFeature("neoforge") {
+        usingSourceSet sourceSets.neoforge
+        capability(project.group as String, project.name, project.version as String)
+        capability(project.group as String, "$project.name-neoforge", project.version as String)
+        withSourcesJar()
+        withJavadocJar()
+    }
+    registerFeature("fabric") {
+        usingSourceSet sourceSets.fabric
+        capability(project.group as String, project.name, project.version as String)
+        capability(project.group as String, "$project.name-fabric", project.version as String)
+        withSourcesJar()
+        withJavadocJar()
+    }
+}
+
+managedVersioning.publishing.mavenRelease(publishing)
+managedVersioning.publishing.mavenPullRequest(publishing)
+managedVersioning.publishing.mavenSnapshot(publishing)
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+['sourcesJar', 'fabricSourcesJar', 'neoforgeSourcesJar'].each {
+    tasks.named(it, Jar) {
+        from(files("LICENSE")) {
+            rename { "${it}_${project.name}" }
+        }
+    }
+}
+
+['jar', 'fabricJar', 'neoforgeJar'].each {
+    tasks.named(it, Jar) {
+        from(files("LICENSE")) {
+            rename { "${it}_${project.name}" }
+        }
+
         manifest {
             attributes([
+                    'Specification-Title'     : mod_name,
+                    'Specification-Vendor'    : mod_author,
+                    'Specification-Version'   : project.version,
+                    'Implementation-Title'    : "$mod_name - ${project.name}",
+                    'Implementation-Version'  : project.version,
+                    'Implementation-Vendor'   : mod_author,
+                    'Built-On-Minecraft'      : libs.versions.minecraft.get(),
                     'Implementation-Commit-Time': managedVersioning.timestamp.get(),
                     'Implementation-Commit': managedVersioning.hash.get()
             ])
         }
     }
+}
 
-    managedVersioning.publishing.mavenPullRequest(publishing)
-    managedVersioning.publishing.mavenSnapshot(publishing)
-    managedVersioning.publishing.mavenRelease(publishing)
+def releaseType = ReleaseType.values().find { it.name() == project.release_type.toUpperCase(Locale.ROOT) } ?: ReleaseType.STABLE
+
+publishMods {
+    changelog = ''
+    version = "${project.version}"
+    type = releaseType
+    dryRun = providers.environmentVariable("MODRINTH_KEY").getOrNull() == null || providers.environmentVariable("CURSEFORGE_KEY").getOrNull() == null
+
+    curseforge('curseforgeFabric') {
+        file = tasks.remapFabricJar.archiveFile
+        displayName = "${project.mod_name} [Fabric/Quilt] v${project.version}"
+        projectId = project.curseforge_id
+        accessToken = System.getenv('CURSEFORGE_KEY')
+        modLoaders = ['fabric', 'quilt']
+        minecraftVersions = [libs.versions.minecraft.get()]
+        requires('fabric-api')
+        requires('dynamic-asset-generator')
+    }
+
+    curseforge('curseforgeNeoforge') {
+        file = tasks.remapNeoforgeJar.archiveFile
+        displayName = "${project.mod_name} [NeoForge] v${project.version}"
+        projectId = project.curseforge_id
+        accessToken = System.getenv('CURSEFORGE_KEY')
+        modLoaders = ['neoforge']
+        minecraftVersions = [libs.versions.minecraft.get()]
+        requires('dynamic-asset-generator')
+    }
+
+    modrinth('modrinthFabric') {
+        file = tasks.remapFabricJar.archiveFile
+        displayName = "${project.mod_name} [Fabric/Quilt] v${project.version}"
+        projectId = project.modrinth_id
+        accessToken = System.getenv('MODRINTH_KEY')
+        minecraftVersions = [libs.versions.minecraft.get()]
+        modLoaders = ['fabric', 'quilt']
+        requires('fabric-api')
+        requires('dynamic_asset_generator')
+    }
+
+    modrinth('modrinthNeoforge') {
+        file = tasks.remapNeoforgeJar.archiveFile
+        displayName = "${project.mod_name} [NeoForge] v${project.version}"
+        projectId = project.modrinth_id
+        accessToken = System.getenv('MODRINTH_KEY')
+        minecraftVersions = [libs.versions.minecraft.get()]
+        modLoaders = ['neoforge']
+        requires('dynamic_asset_generator')
+    }
 }

@@ -1,64 +1,47 @@
 [versions]
-minecraft = "1.20.4"
-parchment_minecraft = "1.20.2"
-parchment_mappings = "2023.12.10"
+minecraft = "1.20.5"
+parchment = "2024.04.14"
 
-neoforge = "20.4.80-beta"
+neoforge = "20.5.0-beta"
 
-fabric_loader = "0.15.3"
-fabric_api = "0.92.1+1.20.4"
+fabric_loader = "0.15.10"
+fabric_api = "0.97.6+1.20.5"
 
-quilt_loader = "0.21.2"
+fabric_mixin = "0.13.3+mixin.0.8.5"
+mixinextras = "0.3.5"
 
-mdg_plugin = "1.4.3"
-mdg_dsl = "1.5.1"
-autoservice = "1.1.1"
+modsdotgroovy = "2.0.0-beta.22"
 
-architectury_loom = "1.4.373"
-quilt_licenser = "2.0.1"
+modpublish = "0.5.1"
 
-dynassetgen = "5.1.2"
-defaultresources = "3.3.3"
+managedversioning = "1.2.17"
 
-mixinextras = "0.3.2"
+quilt_loader = "0.25.0"
 
-jetbrains_annotations = "24.1.0"
-jspecify = "0.3.0"
-
-minotaur = "2.8.3"
-
-managedversioning = "1.2.6"
+dynassetgen = "6.0.3"
+defaultresources = "3.5.2"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
-
-quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loader" }
 
 fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
 fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
 
 neoforge = { module = "net.neoforged:neoforge", version.ref = "neoforge" }
 
-jetbrains_annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains_annotations" }
-jspecify = { module = "org.jspecify:jspecify", version.ref = "jspecify" }
+parchment = { module = "org.parchmentmc.data:parchment-1.20.4", version.ref = "parchment" }
 
-autoservice = { module = "com.google.auto.service:auto-service", version.ref = "autoservice" }
+fabric_mixin = { module = "net.fabricmc:sponge-mixin", version.ref = "fabric_mixin" }
 
-dynassetgen_common = { module = "dev.lukebemish.dynamicassetgenerator:dynamicassetgenerator-common-1.20.4", version.ref = "dynassetgen" }
-dynassetgen_fabriquilt = { module = "dev.lukebemish.dynamicassetgenerator:dynamicassetgenerator-fabriquilt-1.20.4", version.ref = "dynassetgen" }
-dynassetgen_neoforge = { module = "dev.lukebemish.dynamicassetgenerator:dynamicassetgenerator-neoforge-1.20.4", version.ref = "dynassetgen" }
+quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loader" }
 
-defaultresources_common = { module = "dev.lukebemish.defaultresources:defaultresources-common-1.20.4", version.ref = "defaultresources" }
-defaultresources_fabriquilt = { module = "dev.lukebemish.defaultresources:defaultresources-fabriquilt-1.20.4", version.ref = "defaultresources" }
-defaultresources_neoforge = { module = "dev.lukebemish.defaultresources:defaultresources-neoforge-1.20.4", version.ref = "defaultresources" }
+dynassetgen = { module = "dev.lukebemish:dynamicassetgenerator", version.ref = "dynassetgen" }
+defaultresources = { module = "dev.lukebemish:defaultresources", version.ref = "defaultresources" }
 
 mixinextras_common = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixinextras" }
 
 [plugins]
 
 managedversioning = { id = "dev.lukebemish.managedversioning", version.ref = "managedversioning" }
-mdg_plugin = { id = "org.groovymc.modsdotgroovy", version.ref = "mdg_plugin" }
-architectury_loom = { id = "dev.architectury.loom", version.ref = "architectury_loom" }
-quilt_licenser = { id = "org.quiltmc.gradle.licenser", version.ref = "quilt_licenser" }
-minotaur = { id = "com.modrinth.minotaur", version.ref = "minotaur" }
-curseforgegradle = {id = "net.darkhax.curseforgegradle", version = "1.1.16"}
+modsdotgroovy = { id = "org.groovymc.modsdotgroovy", version.ref = "modsdotgroovy" }
+modpublish = { id = "me.modmuss50.mod-publish-plugin", version.ref = "modpublish" }
