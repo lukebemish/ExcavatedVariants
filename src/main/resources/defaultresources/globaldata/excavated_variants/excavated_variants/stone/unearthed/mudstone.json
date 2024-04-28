@@ -7,6 +7,6 @@
   },
   "block": "unearthed:mudstone",
   "ore_tags": [
-    "forge:ores_in_ground/mudstone"
+    "c:ores_in_ground/mudstone"
   ]
 }

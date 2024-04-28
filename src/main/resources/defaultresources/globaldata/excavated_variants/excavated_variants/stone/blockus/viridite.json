@@ -7,6 +7,6 @@
   },
   "block": "blockus:viridite",
   "ore_tags": [
-    "forge:ores_in_ground/viridite"
+    "c:ores_in_ground/viridite"
   ]
 }

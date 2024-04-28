@@ -7,6 +7,6 @@
   },
   "block": "unearthed:granodiorite",
   "ore_tags": [
-    "forge:ores_in_ground/granodiorite"
+    "c:ores_in_ground/granodiorite"
   ]
 }

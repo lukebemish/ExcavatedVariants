@@ -7,6 +7,6 @@
   },
   "block": "byg:mossy_stone",
   "ore_tags": [
-    "forge:ores_in_ground/mossy_stone"
+    "c:ores_in_ground/mossy_stone"
   ]
 }

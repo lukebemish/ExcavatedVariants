@@ -7,6 +7,6 @@
   },
   "block": "betterend:virid_jadestone",
   "ore_tags": [
-    "forge:ores_in_ground/virid_jadestone"
+    "c:ores_in_ground/virid_jadestone"
   ]
 }

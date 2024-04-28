@@ -7,6 +7,6 @@
   },
   "block": "byg:rocky_stone",
   "ore_tags": [
-    "forge:ores_in_ground/rocky"
+    "c:ores_in_ground/rocky"
   ]
 }

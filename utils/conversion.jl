@@ -51,7 +51,7 @@ function convertconfig(name)
             out["types"] = types
             out["block"] = block
             out["ore_tags"] = [
-                "forge:ores_in_ground/$id"
+                "c:ores_in_ground/$id"
             ]
             out["translations"] = translations
             open(joinpath(newstonedir, id*".json"), "w") do f
@@ -101,9 +101,7 @@ function convertconfig(name)
             end
             tags = []
             for tag ∈ tagsraw
-                push!(tags, "forge:ores/$tag")
                 push!(tags, "c:ores/$tag")
-                push!(tags, "c:$(tag)_ores")
                 if tag in VANILLA_ORES
                     push!(tags, "minecraft:$(tag)_ores")
                 end

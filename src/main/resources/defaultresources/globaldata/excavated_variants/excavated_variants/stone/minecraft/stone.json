@@ -7,6 +7,6 @@
   },
   "block": "minecraft:stone",
   "ore_tags": [
-    "forge:ores_in_ground/stone"
+    "c:ores_in_ground/stone"
   ]
 }

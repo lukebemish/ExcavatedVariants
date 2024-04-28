@@ -7,6 +7,6 @@
   },
   "block": "what_is_stone:serpentinite",
   "ore_tags": [
-    "forge:ores_in_ground/serpentinite"
+    "c:ores_in_ground/serpentinite"
   ]
 }

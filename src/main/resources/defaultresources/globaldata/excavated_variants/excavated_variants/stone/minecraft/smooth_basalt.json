@@ -7,6 +7,6 @@
   },
   "block": "minecraft:smooth_basalt",
   "ore_tags": [
-    "forge:ores_in_ground/smooth_basalt"
+    "c:ores_in_ground/smooth_basalt"
   ]
 }

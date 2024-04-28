@@ -7,6 +7,6 @@
   },
   "block": "enriched:dark_granite",
   "ore_tags": [
-    "forge:ores_in_ground/dark_granite"
+    "c:ores_in_ground/dark_granite"
   ]
 }

@@ -7,6 +7,6 @@
   },
   "block": "betterend:sandy_jadestone",
   "ore_tags": [
-    "forge:ores_in_ground/sandy_jadestone"
+    "c:ores_in_ground/sandy_jadestone"
   ]
 }

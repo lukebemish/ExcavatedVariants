@@ -7,6 +7,6 @@
   },
   "block": "darkerdepths:aridrock",
   "ore_tags": [
-    "forge:ores_in_ground/aridrock"
+    "c:ores_in_ground/aridrock"
   ]
 }

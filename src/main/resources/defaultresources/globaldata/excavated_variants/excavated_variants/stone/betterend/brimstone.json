@@ -7,6 +7,6 @@
   },
   "block": "betterend:brimstone",
   "ore_tags": [
-    "forge:ores_in_ground/brimstone"
+    "c:ores_in_ground/brimstone"
   ]
 }

@@ -7,6 +7,6 @@
   },
   "block": "what_is_stone:limestone",
   "ore_tags": [
-    "forge:ores_in_ground/limestone"
+    "c:ores_in_ground/limestone"
   ]
 }

@@ -7,6 +7,6 @@
   },
   "block": "what_is_stone:soapstone",
   "ore_tags": [
-    "forge:ores_in_ground/soapstone"
+    "c:ores_in_ground/soapstone"
   ]
 }

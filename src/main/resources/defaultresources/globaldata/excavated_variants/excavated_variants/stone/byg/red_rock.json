@@ -7,6 +7,6 @@
   },
   "block": "byg:red_rock",
   "ore_tags": [
-    "forge:ores_in_ground/red_rock"
+    "c:ores_in_ground/red_rock"
   ]
 }

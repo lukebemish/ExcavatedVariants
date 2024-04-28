@@ -7,6 +7,6 @@
   },
   "block": "minecraft:dripstone_block",
   "ore_tags": [
-    "forge:ores_in_ground/dripstone"
+    "c:ores_in_ground/dripstone"
   ]
 }

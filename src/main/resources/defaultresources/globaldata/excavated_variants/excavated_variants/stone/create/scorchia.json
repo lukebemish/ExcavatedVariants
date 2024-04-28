@@ -8,6 +8,6 @@
   },
   "block": "create:scorchia",
   "ore_tags": [
-    "forge:ores_in_ground/scorchia"
+    "c:ores_in_ground/scorchia"
   ]
 }

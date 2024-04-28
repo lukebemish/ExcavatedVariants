@@ -7,6 +7,6 @@
   },
   "block": "blockus:bluestone",
   "ore_tags": [
-    "forge:ores_in_ground/bluestone"
+    "c:ores_in_ground/bluestone"
   ]
 }

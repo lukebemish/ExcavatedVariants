@@ -7,6 +7,6 @@
   },
   "block": "what_is_stone:slate",
   "ore_tags": [
-    "forge:ores_in_ground/slate"
+    "c:ores_in_ground/slate"
   ]
 }

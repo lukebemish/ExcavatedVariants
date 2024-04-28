@@ -7,6 +7,6 @@
   },
   "block": "quark:jasper",
   "ore_tags": [
-    "forge:ores_in_ground/jasper"
+    "c:ores_in_ground/jasper"
   ]
 }

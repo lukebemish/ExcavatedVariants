@@ -7,6 +7,6 @@
   },
   "block": "byg:scoria_stone",
   "ore_tags": [
-    "forge:ores_in_ground/scoria"
+    "c:ores_in_ground/scoria"
   ]
 }

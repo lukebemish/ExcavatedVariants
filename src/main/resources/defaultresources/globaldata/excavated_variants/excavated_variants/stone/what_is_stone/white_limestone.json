@@ -7,6 +7,6 @@
   },
   "block": "what_is_stone:white_limestone",
   "ore_tags": [
-    "forge:ores_in_ground/white_limestone"
+    "c:ores_in_ground/white_limestone"
   ]
 }

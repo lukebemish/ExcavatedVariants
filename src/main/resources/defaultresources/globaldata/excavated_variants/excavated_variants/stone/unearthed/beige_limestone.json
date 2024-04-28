@@ -7,6 +7,6 @@
   },
   "block": "unearthed:beige_limestone",
   "ore_tags": [
-    "forge:ores_in_ground/beige_limestone"
+    "c:ores_in_ground/beige_limestone"
   ]
 }

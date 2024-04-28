@@ -7,6 +7,6 @@
   },
   "block": "create:asurine",
   "ore_tags": [
-    "forge:ores_in_ground/asurine"
+    "c:ores_in_ground/asurine"
   ]
 }

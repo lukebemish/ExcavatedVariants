@@ -7,6 +7,6 @@
   },
   "block": "minecraft:diorite",
   "ore_tags": [
-    "forge:ores_in_ground/diorite"
+    "c:ores_in_ground/diorite"
   ]
 }

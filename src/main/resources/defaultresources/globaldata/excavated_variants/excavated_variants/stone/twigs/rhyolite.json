@@ -7,6 +7,6 @@
   },
   "block": "twigs:rhyolite",
   "ore_tags": [
-    "forge:ores_in_ground/rhyolite"
+    "c:ores_in_ground/rhyolite"
   ]
 }

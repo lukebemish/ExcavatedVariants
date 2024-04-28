@@ -7,6 +7,6 @@
   },
   "block": "unearthed:dolerite",
   "ore_tags": [
-    "forge:ores_in_ground/dolerite"
+    "c:ores_in_ground/dolerite"
   ]
 }

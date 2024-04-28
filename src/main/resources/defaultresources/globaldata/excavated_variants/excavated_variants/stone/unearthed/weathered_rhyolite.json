@@ -7,6 +7,6 @@
   },
   "block": "unearthed:weathered_rhyolite",
   "ore_tags": [
-    "forge:ores_in_ground/weathered_rhyolite"
+    "c:ores_in_ground/weathered_rhyolite"
   ]
 }

@@ -7,6 +7,6 @@
   },
   "block": "create:ochrum",
   "ore_tags": [
-    "forge:ores_in_ground/ochrum"
+    "c:ores_in_ground/ochrum"
   ]
 }

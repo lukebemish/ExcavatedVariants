@@ -7,6 +7,6 @@
   },
   "block": "twigs:bloodstone",
   "ore_tags": [
-    "forge:ores_in_ground/bloodstone"
+    "c:ores_in_ground/bloodstone"
   ]
 }

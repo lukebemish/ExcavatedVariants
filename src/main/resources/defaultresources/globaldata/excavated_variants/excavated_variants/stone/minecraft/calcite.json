@@ -7,6 +7,6 @@
   },
   "block": "minecraft:calcite",
   "ore_tags": [
-    "forge:ores_in_ground/calcite"
+    "c:ores_in_ground/calcite"
   ]
 }

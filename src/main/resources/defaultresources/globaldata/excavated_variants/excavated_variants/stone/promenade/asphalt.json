@@ -7,6 +7,6 @@
   },
   "block": "promenade:asphalt",
   "ore_tags": [
-    "forge:ores_in_ground/asphalt"
+    "c:ores_in_ground/asphalt"
   ]
 }

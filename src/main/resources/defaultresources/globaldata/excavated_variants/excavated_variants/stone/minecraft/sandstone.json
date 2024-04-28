@@ -7,6 +7,6 @@
   },
   "block": "minecraft:sandstone",
   "ore_tags": [
-    "forge:ores_in_ground/sandstone"
+    "c:ores_in_ground/sandstone"
   ]
 }
