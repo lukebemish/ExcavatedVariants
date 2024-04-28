@@ -32,8 +32,6 @@
     }
   },
   "tags": [
-    "forge:ores/silver",
-    "c:ores/silver",
-    "c:silver_ores"
+    "c:ores/silver"
   ]
 }

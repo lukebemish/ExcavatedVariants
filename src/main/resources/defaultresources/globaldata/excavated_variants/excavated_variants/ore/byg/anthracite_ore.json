@@ -9,8 +9,6 @@
     "byg:anthracite_ore": "excavated_variants:byg/brimstone"
   },
   "tags": [
-    "forge:ores/anthracite",
-    "c:ores/anthracite",
-    "c:anthracite_ores"
+    "c:ores/anthracite"
   ]
 }

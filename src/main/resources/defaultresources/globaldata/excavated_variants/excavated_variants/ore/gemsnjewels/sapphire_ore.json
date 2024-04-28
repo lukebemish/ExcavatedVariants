@@ -10,8 +10,6 @@
     "gemsnjewels:sapphire_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/sapphire",
-    "c:ores/sapphire",
-    "c:sapphire_ores"
+    "c:ores/sapphire"
   ]
 }

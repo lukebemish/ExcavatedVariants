@@ -9,8 +9,6 @@
     "techreborn:cinnabar_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/cinnabar",
-    "c:ores/cinnabar",
-    "c:cinnabar_ores"
+    "c:ores/cinnabar"
   ]
 }

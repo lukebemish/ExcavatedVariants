@@ -10,9 +10,7 @@
     "geolosys:kimberlite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/diamond",
     "c:ores/diamond",
-    "c:diamond_ores",
     "minecraft:diamond_ores"
   ]
 }

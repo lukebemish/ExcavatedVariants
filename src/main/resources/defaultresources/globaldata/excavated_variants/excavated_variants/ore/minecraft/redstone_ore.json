@@ -38,9 +38,7 @@
     "spelunkery:calciite_redstone_ore": "excavated_variants:minecraft/calcite"
   },
   "tags": [
-    "forge:ores/redstone",
     "c:ores/redstone",
-    "c:redstone_ores",
     "minecraft:redstone_ores"
   ]
 }

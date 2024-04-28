@@ -9,8 +9,6 @@
     "miningmaster:haste_peridot_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/haste_peridot",
-    "c:ores/haste_peridot",
-    "c:haste_peridot_ores"
+    "c:ores/haste_peridot"
   ]
 }

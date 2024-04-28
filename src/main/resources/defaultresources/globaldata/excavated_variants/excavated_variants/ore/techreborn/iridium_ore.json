@@ -10,8 +10,6 @@
     "techreborn:deepslate_iridium_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/iridium",
-    "c:ores/iridium",
-    "c:iridium_ores"
+    "c:ores/iridium"
   ]
 }

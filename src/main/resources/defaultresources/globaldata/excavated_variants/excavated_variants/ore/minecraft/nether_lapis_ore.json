@@ -9,9 +9,7 @@
     "betternether:nether_lapis_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/lapis",
     "c:ores/lapis",
-    "c:lapis_ores",
     "minecraft:lapis_ores"
   ]
 }

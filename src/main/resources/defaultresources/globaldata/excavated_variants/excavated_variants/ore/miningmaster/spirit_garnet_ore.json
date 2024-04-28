@@ -9,8 +9,6 @@
     "miningmaster:spirit_garnet_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/spirit_garnet",
-    "c:ores/spirit_garnet",
-    "c:spirit_garnet_ores"
+    "c:ores/spirit_garnet"
   ]
 }

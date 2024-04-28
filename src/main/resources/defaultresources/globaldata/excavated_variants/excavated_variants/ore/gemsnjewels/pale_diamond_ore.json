@@ -10,8 +10,6 @@
     "gemsnjewels:pale_diamond_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/pale_diamond",
-    "c:ores/pale_diamond",
-    "c:pale_diamond_ores"
+    "c:ores/pale_diamond"
   ]
 }

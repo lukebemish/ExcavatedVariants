@@ -10,8 +10,6 @@
     "gemsnjewels:citrine_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/citrine",
-    "c:ores/citrine",
-    "c:citrine_ores"
+    "c:ores/citrine"
   ]
 }

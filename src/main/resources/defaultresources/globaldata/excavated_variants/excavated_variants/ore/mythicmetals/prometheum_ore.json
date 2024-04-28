@@ -10,8 +10,6 @@
     "mythicmetals:deepslate_prometheum_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/prometheum",
-    "c:ores/prometheum",
-    "c:prometheum_ores"
+    "c:ores/prometheum"
   ]
 }

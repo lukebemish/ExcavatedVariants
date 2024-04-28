@@ -10,8 +10,6 @@
     "gemsnjewels:topaz_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/topaz",
-    "c:ores/topaz",
-    "c:topaz_ores"
+    "c:ores/topaz"
   ]
 }

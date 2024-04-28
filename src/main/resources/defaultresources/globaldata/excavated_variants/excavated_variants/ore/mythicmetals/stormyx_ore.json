@@ -10,8 +10,6 @@
     "mythicmetals:blackstone_stormyx_ore": "excavated_variants:minecraft/blackstone"
   },
   "tags": [
-    "forge:ores/stormyx",
-    "c:ores/stormyx",
-    "c:stormyx_ores"
+    "c:ores/stormyx"
   ]
 }

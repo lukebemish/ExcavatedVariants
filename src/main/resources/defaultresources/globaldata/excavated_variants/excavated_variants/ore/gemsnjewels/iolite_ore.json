@@ -10,8 +10,6 @@
     "gemsnjewels:iolite_deepslate_ore_block": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/iolite",
-    "c:ores/iolite",
-    "c:iolite_ores"
+    "c:ores/iolite"
   ]
 }

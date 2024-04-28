@@ -35,9 +35,7 @@
     "spelunkery:tuff_copper_ore": "excavated_variants:minecraft/tuff"
   },
   "tags": [
-    "forge:ores/copper",
     "c:ores/copper",
-    "c:copper_ores",
     "minecraft:copper_ores"
   ]
 }

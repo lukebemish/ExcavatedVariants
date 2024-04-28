@@ -10,8 +10,6 @@
     "gemsnjewels:ametrine_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/ametrine",
-    "c:ores/ametrine",
-    "c:ametrine_ores"
+    "c:ores/ametrine"
   ]
 }

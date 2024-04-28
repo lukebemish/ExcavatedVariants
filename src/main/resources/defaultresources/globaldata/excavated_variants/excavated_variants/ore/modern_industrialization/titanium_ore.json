@@ -9,8 +9,6 @@
     "modern_industrialization:titanium_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/titanium",
-    "c:ores/titanium",
-    "c:titanium_ores"
+    "c:ores/titanium"
   ]
 }

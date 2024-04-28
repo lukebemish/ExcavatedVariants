@@ -10,8 +10,6 @@
     "mythicmetals:carmot_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/carmot",
-    "c:ores/carmot",
-    "c:carmot_ores"
+    "c:ores/carmot"
   ]
 }

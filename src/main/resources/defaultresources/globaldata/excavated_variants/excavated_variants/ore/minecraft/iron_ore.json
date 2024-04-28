@@ -37,9 +37,7 @@
     "spelunkery:tuff_iron_ore": "excavated_variants:minecraft/tuff"
   },
   "tags": [
-    "forge:ores/iron",
     "c:ores/iron",
-    "c:iron_ores",
     "minecraft:iron_ores"
   ]
 }

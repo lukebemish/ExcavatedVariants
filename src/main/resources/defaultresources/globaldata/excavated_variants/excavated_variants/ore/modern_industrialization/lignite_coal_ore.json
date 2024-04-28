@@ -10,8 +10,6 @@
     "modern_industrialization:lignite_coal_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/lignite_coal",
-    "c:ores/lignite_coal",
-    "c:lignite_coal_ores"
+    "c:ores/lignite_coal"
   ]
 }

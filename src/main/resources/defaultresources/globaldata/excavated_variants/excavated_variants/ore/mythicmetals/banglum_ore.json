@@ -11,8 +11,6 @@
     "mythicmetals:banglum_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/banglum",
-    "c:ores/banglum",
-    "c:banglum_ores"
+    "c:ores/banglum"
   ]
 }

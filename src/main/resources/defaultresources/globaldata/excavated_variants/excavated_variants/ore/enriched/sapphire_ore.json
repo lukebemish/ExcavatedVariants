@@ -10,8 +10,6 @@
     "enriched:deepslate_sapphire_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/sapphire",
-    "c:ores/sapphire",
-    "c:sapphire_ores"
+    "c:ores/sapphire"
   ]
 }

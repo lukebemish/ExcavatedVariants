@@ -10,8 +10,6 @@
     "modern_industrialization:deepslate_uranium_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/uranium",
-    "c:ores/uranium",
-    "c:uranium_ores"
+    "c:ores/uranium"
   ]
 }

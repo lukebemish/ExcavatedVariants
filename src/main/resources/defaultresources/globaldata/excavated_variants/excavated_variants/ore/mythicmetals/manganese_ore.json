@@ -9,8 +9,6 @@
     "mythicmetals:manganese_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/manganese",
-    "c:ores/manganese",
-    "c:manganese_ores"
+    "c:ores/manganese"
   ]
 }

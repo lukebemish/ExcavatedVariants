@@ -10,8 +10,6 @@
     "modern_industrialization:mozanite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/mozanite",
-    "c:ores/mozanite",
-    "c:mozanite_ores"
+    "c:ores/mozanite"
   ]
 }

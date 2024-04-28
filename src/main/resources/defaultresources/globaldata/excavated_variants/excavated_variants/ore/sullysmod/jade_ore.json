@@ -29,8 +29,6 @@
     }
   },
   "tags": [
-    "forge:ores/jade",
-    "c:ores/jade",
-    "c:jade_ores"
+    "c:ores/jade"
   ]
 }

@@ -9,8 +9,6 @@
     "modern_industrialization:quartz_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/quartz",
-    "c:ores/quartz",
-    "c:quartz_ores"
+    "c:ores/quartz"
   ]
 }

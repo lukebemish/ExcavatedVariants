@@ -10,8 +10,6 @@
     "enriched:deepslate_ruby_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/ruby",
-    "c:ores/ruby",
-    "c:ruby_ores"
+    "c:ores/ruby"
   ]
 }

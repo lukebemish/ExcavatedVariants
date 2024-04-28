@@ -10,8 +10,6 @@
     "gemsnjewels:amethyst_deepslate_ore_block": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/amethyst",
-    "c:ores/amethyst",
-    "c:amethyst_ores"
+    "c:ores/amethyst"
   ]
 }

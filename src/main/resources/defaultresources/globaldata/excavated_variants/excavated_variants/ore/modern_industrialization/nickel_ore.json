@@ -10,8 +10,6 @@
     "modern_industrialization:deepslate_nickel_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/nickel",
-    "c:ores/nickel",
-    "c:nickel_ores"
+    "c:ores/nickel"
   ]
 }

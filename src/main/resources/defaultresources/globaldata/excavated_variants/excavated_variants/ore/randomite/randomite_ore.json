@@ -10,8 +10,6 @@
     "randomite:deepslate_randomite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/randomite",
-    "c:ores/randomite",
-    "c:randomite_ores"
+    "c:ores/randomite"
   ]
 }

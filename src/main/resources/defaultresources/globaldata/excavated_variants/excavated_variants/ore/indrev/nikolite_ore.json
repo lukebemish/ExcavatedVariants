@@ -10,8 +10,6 @@
     "indrev:deepslate_nikolite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/nikolite",
-    "c:ores/nikolite",
-    "c:nikolite_ores"
+    "c:ores/nikolite"
   ]
 }

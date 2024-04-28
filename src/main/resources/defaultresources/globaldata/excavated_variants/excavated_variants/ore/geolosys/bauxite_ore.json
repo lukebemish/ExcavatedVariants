@@ -10,8 +10,6 @@
     "geolosys:deepslate_bauxite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/aluminum",
-    "c:ores/aluminum",
-    "c:aluminum_ores"
+    "c:ores/aluminum"
   ]
 }

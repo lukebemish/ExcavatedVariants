@@ -10,12 +10,8 @@
     "geolosys:deepslate_limonite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/nickel",
     "c:ores/nickel",
-    "c:nickel_ores",
-    "forge:ores/iron",
     "c:ores/iron",
-    "c:iron_ores",
     "minecraft:iron_ores"
   ]
 }

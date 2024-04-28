@@ -10,8 +10,6 @@
     "gemsnjewels:peridot_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/peridot",
-    "c:ores/peridot",
-    "c:peridot_ores"
+    "c:ores/peridot"
   ]
 }

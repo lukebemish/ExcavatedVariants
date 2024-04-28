@@ -10,8 +10,6 @@
     "mythicmetals:mythril_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/mythril",
-    "c:ores/mythril",
-    "c:mythril_ores"
+    "c:ores/mythril"
   ]
 }

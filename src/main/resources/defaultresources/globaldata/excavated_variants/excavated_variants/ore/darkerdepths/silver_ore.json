@@ -11,8 +11,6 @@
     "darkerdepths:aridrock_silver_ore": "excavated_variants:darkerdepths/aridrock"
   },
   "tags": [
-    "forge:ores/silver",
-    "c:ores/silver",
-    "c:silver_ores"
+    "c:ores/silver"
   ]
 }

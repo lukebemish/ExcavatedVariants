@@ -12,8 +12,6 @@
     "mythicmetals:tuff_orichalcum_ore": "excavated_variants:minecraft/tuff"
   },
   "tags": [
-    "forge:ores/orichalcum",
-    "c:ores/orichalcum",
-    "c:orichalcum_ores"
+    "c:ores/orichalcum"
   ]
 }

@@ -39,9 +39,7 @@
     "spelunkery:tuff_gold_ore": "excavated_variants:minecraft/tuff"
   },
   "tags": [
-    "forge:ores/gold",
     "c:ores/gold",
-    "c:gold_ores",
     "minecraft:gold_ores"
   ]
 }

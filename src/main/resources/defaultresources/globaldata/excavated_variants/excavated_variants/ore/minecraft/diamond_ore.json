@@ -38,9 +38,7 @@
     "spelunkery:smooth_basalt_diamond_ore": "excavated_variants:minecraft/smooth_basalt"
   },
   "tags": [
-    "forge:ores/diamond",
     "c:ores/diamond",
-    "c:diamond_ores",
     "minecraft:diamond_ores"
   ]
 }

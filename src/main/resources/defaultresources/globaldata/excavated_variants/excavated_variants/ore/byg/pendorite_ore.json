@@ -9,8 +9,6 @@
     "byg:pendorite_ore": "excavated_variants:byg/blue_netherrack"
   },
   "tags": [
-    "forge:ores/pendorite",
-    "c:ores/pendorite",
-    "c:pendorite_ores"
+    "c:ores/pendorite"
   ]
 }

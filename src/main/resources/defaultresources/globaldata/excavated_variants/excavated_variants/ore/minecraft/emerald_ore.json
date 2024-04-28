@@ -35,9 +35,7 @@
     "spelunkery:andesite_emerald_ore": "excavated_variants:minecraft/andesite"
   },
   "tags": [
-    "forge:ores/emerald",
     "c:ores/emerald",
-    "c:emerald_ores",
     "minecraft:emerald_ores"
   ]
 }

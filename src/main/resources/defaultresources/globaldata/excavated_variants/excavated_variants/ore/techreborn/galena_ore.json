@@ -10,8 +10,6 @@
     "techreborn:galena_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/galena",
-    "c:ores/galena",
-    "c:galena_ores"
+    "c:ores/galena"
   ]
 }

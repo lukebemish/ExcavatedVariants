@@ -16,8 +16,6 @@
     "universal_ores:basalt_quartz_ore": "excavated_variants:minecraft/basalt"
   },
   "tags": [
-    "forge:ores/quartz",
-    "c:ores/quartz",
-    "c:quartz_ores"
+    "c:ores/quartz"
   ]
 }

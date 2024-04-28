@@ -9,8 +9,6 @@
     "techreborn:sodalite_ore": "excavated_variants:minecraft/end_stone"
   },
   "tags": [
-    "forge:ores/sodalite",
-    "c:ores/sodalite",
-    "c:sodalite_ores"
+    "c:ores/sodalite"
   ]
 }

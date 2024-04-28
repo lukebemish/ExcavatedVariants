@@ -10,8 +10,6 @@
     "enriched:deepslate_tanzanite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/tanzanite",
-    "c:ores/tanzanite",
-    "c:tanzanite_ores"
+    "c:ores/tanzanite"
   ]
 }

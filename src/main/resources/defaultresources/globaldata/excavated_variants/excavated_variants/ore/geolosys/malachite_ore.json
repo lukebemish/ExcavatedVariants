@@ -10,9 +10,7 @@
     "geolosys:deepslate_malachite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/copper",
     "c:ores/copper",
-    "c:copper_ores",
     "minecraft:copper_ores"
   ]
 }

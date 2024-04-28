@@ -14,9 +14,7 @@
     "byg:blue_nether_gold_ore": "excavated_variants:byg/blue_netherrack"
   },
   "tags": [
-    "forge:ores/gold",
     "c:ores/gold",
-    "c:gold_ores",
     "minecraft:gold_ores"
   ]
 }

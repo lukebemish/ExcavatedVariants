@@ -10,11 +10,7 @@
     "geolosys:deepslate_autunite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/yellorium",
     "c:ores/yellorium",
-    "c:yellorium_ores",
-    "forge:ores/uranium",
-    "c:ores/uranium",
-    "c:uranium_ores"
+    "c:ores/uranium"
   ]
 }

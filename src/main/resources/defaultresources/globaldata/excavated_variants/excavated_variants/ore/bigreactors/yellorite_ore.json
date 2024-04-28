@@ -9,11 +9,7 @@
     "bigreactors:yellorite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/uranium",
     "c:ores/uranium",
-    "c:uranium_ores",
-    "forge:ores/yellorite",
-    "c:ores/yellorite",
-    "c:yellorite_ores"
+    "c:ores/yellorite"
   ]
 }

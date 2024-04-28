@@ -10,9 +10,7 @@
     "geolosys:gold_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/gold",
     "c:ores/gold",
-    "c:gold_ores",
     "minecraft:gold_ores"
   ]
 }

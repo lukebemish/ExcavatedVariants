@@ -9,8 +9,6 @@
     "mythicmetals:tin_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/tin",
-    "c:ores/tin",
-    "c:tin_ores"
+    "c:ores/tin"
   ]
 }

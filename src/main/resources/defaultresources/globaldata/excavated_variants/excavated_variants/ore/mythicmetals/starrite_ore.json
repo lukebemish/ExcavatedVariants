@@ -12,8 +12,6 @@
     "mythicmetals:starrite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/starrite",
-    "c:ores/starrite",
-    "c:starrite_ores"
+    "c:ores/starrite"
   ]
 }

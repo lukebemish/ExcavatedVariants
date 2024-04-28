@@ -9,8 +9,6 @@
     "salt:rock_salt_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/rock_salt",
-    "c:ores/rock_salt",
-    "c:rock_salt_ores"
+    "c:ores/rock_salt"
   ]
 }

@@ -12,8 +12,6 @@
     "randomium:randomium_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/randomium",
-    "c:ores/randomium",
-    "c:randomium_ores"
+    "c:ores/randomium"
   ]
 }

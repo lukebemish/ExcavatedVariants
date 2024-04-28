@@ -10,9 +10,7 @@
     "geolosys:deepslate_lignite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/coal",
     "c:ores/coal",
-    "c:coal_ores",
     "minecraft:coal_ores"
   ]
 }

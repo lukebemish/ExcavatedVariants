@@ -10,8 +10,6 @@
     "modern_industrialization:bauxite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/bauxite",
-    "c:ores/bauxite",
-    "c:bauxite_ores"
+    "c:ores/bauxite"
   ]
 }

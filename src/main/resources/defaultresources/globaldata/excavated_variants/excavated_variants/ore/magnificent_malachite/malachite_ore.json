@@ -10,8 +10,6 @@
     "magnificent_malachite:malachite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/malachite",
-    "c:ores/malachite",
-    "c:malachite_ores"
+    "c:ores/malachite"
   ]
 }

@@ -10,8 +10,6 @@
     "geolosys:sphalerite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/zinc",
-    "c:ores/zinc",
-    "c:zinc_ores"
+    "c:ores/zinc"
   ]
 }

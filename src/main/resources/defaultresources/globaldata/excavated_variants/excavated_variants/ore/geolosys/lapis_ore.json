@@ -10,9 +10,7 @@
     "geolosys:deepslate_lapis_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/lapis",
     "c:ores/lapis",
-    "c:lapis_ores",
     "minecraft:lapis_ores"
   ]
 }

@@ -10,8 +10,6 @@
     "techreborn:ruby_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/ruby",
-    "c:ores/ruby",
-    "c:ruby_ores"
+    "c:ores/ruby"
   ]
 }

@@ -10,8 +10,6 @@
     "immersiveengineering:ore_aluminum": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/aluminum",
-    "c:ores/aluminum",
-    "c:aluminum_ores"
+    "c:ores/aluminum"
   ]
 }

@@ -9,8 +9,6 @@
     "miningmaster:kinetic_opal_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/kinetic_opal",
-    "c:ores/kinetic_opal",
-    "c:kinetic_opal_ores"
+    "c:ores/kinetic_opal"
   ]
 }

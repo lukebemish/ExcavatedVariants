@@ -10,8 +10,6 @@
     "mythicmetals:adamantite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/adamantite",
-    "c:ores/adamantite",
-    "c:adamantite_ores"
+    "c:ores/adamantite"
   ]
 }

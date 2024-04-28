@@ -10,9 +10,7 @@
     "geolosys:azurite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/copper",
     "c:ores/copper",
-    "c:copper_ores",
     "minecraft:copper_ores"
   ]
 }

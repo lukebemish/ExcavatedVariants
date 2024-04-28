@@ -10,9 +10,7 @@
     "geolosys:deepslate_cinnabar_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/redstone",
     "c:ores/redstone",
-    "c:redstone_ores",
     "minecraft:redstone_ores"
   ]
 }

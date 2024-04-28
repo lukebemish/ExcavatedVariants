@@ -9,8 +9,6 @@
     "purpeille:purpur_remnants": "excavated_variants:minecraft/end_stone"
   },
   "tags": [
-    "forge:ores/purpur_remnants",
-    "c:ores/purpur_remnants",
-    "c:purpur_remnants_ores"
+    "c:ores/purpur_remnants"
   ]
 }

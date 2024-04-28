@@ -10,8 +10,6 @@
     "mekanism:fluorite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/fluorite",
-    "c:ores/fluorite",
-    "c:fluorite_ores"
+    "c:ores/fluorite"
   ]
 }

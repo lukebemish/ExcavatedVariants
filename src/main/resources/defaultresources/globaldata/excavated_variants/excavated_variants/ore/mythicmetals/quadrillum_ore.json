@@ -9,8 +9,6 @@
     "mythicmetals:quadrillum_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/quadrillum",
-    "c:ores/quadrillum",
-    "c:quadrillum_ores"
+    "c:ores/quadrillum"
   ]
 }

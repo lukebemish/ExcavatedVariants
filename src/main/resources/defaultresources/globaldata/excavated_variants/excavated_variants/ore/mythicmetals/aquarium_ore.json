@@ -9,8 +9,6 @@
     "mythicmetals:aquarium_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/aquarium",
-    "c:ores/aquarium",
-    "c:aquarium_ores"
+    "c:ores/aquarium"
   ]
 }

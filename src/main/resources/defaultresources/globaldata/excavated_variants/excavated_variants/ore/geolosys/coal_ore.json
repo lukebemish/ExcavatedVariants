@@ -10,9 +10,7 @@
     "geolosys:coal_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/coal",
     "c:ores/coal",
-    "c:coal_ores",
     "minecraft:coal_ores"
   ]
 }

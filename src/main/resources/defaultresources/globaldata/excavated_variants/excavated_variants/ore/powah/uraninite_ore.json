@@ -10,8 +10,6 @@
     "powah:deepslate_uraninite_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/uraninite",
-    "c:ores/uraninite",
-    "c:uraninite_ores"
+    "c:ores/uraninite"
   ]
 }

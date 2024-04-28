@@ -10,8 +10,6 @@
     "mythicmetals:runite_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/runite",
-    "c:ores/runite",
-    "c:runite_ores"
+    "c:ores/runite"
   ]
 }

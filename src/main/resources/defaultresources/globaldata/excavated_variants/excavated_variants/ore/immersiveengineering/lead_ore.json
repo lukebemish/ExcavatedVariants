@@ -10,8 +10,6 @@
     "immersiveengineering:deepslate_ore_lead": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/lead",
-    "c:ores/lead",
-    "c:lead_ores"
+    "c:ores/lead"
   ]
 }

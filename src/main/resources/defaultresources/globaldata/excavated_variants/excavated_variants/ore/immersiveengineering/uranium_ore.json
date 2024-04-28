@@ -10,8 +10,6 @@
     "immersiveengineering:deepslate_ore_uranium": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/uranium",
-    "c:ores/uranium",
-    "c:uranium_ores"
+    "c:ores/uranium"
   ]
 }

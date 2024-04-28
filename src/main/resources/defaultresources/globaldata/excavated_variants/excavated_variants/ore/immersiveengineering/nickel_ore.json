@@ -10,8 +10,6 @@
     "immersiveengineering:deepslate_ore_nickel": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/nickel",
-    "c:ores/nickel",
-    "c:nickel_ores"
+    "c:ores/nickel"
   ]
 }

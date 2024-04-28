@@ -10,8 +10,6 @@
     "gemsnjewels:aquamarine_deepslate_ore_block": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/aquamarine",
-    "c:ores/aquamarine",
-    "c:aquamarine_ores"
+    "c:ores/aquamarine"
   ]
 }

@@ -10,8 +10,6 @@
     "gemsnjewels:kunzite_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/kunzite",
-    "c:ores/kunzite",
-    "c:kunzite_ores"
+    "c:ores/kunzite"
   ]
 }

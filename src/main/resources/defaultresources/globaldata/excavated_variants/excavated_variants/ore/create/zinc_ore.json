@@ -29,8 +29,6 @@
     }
   },
   "tags": [
-    "forge:ores/zinc",
-    "c:ores/zinc",
-    "c:zinc_ores"
+    "c:ores/zinc"
   ]
 }

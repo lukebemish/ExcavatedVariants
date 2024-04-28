@@ -10,8 +10,6 @@
     "gemsnjewels:opal_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/opal",
-    "c:ores/opal",
-    "c:opal_ores"
+    "c:ores/opal"
   ]
 }

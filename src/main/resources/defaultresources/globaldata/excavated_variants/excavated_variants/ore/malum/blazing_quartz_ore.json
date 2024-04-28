@@ -9,8 +9,6 @@
     "malum:blazing_quartz_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/blazing_quartz",
-    "c:ores/blazing_quartz",
-    "c:blazing_quartz_ores"
+    "c:ores/blazing_quartz"
   ]
 }

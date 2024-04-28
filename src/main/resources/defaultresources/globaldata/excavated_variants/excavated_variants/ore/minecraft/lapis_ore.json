@@ -38,9 +38,7 @@
     "spelunkery:sandstone_lapis_ore": "excavated_variants:minecraft/sandstone"
   },
   "tags": [
-    "forge:ores/lapis",
     "c:ores/lapis",
-    "c:lapis_ores",
     "minecraft:lapis_ores"
   ]
 }

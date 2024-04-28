@@ -9,8 +9,6 @@
     "gemsnjewels:bright_opal_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/bright_opal",
-    "c:ores/bright_opal",
-    "c:bright_opal_ores"
+    "c:ores/bright_opal"
   ]
 }

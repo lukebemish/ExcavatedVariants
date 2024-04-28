@@ -9,8 +9,6 @@
     "mysticalagriculture:soulium_ore": "excavated_variants:mysticalagriculture/soulstone"
   },
   "tags": [
-    "forge:ores/soulium",
-    "c:ores/soulium",
-    "c:soulium_ores"
+    "c:ores/soulium"
   ]
 }

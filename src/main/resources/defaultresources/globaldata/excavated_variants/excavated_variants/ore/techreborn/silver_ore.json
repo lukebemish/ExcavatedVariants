@@ -10,8 +10,6 @@
     "techreborn:silver_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/silver",
-    "c:ores/silver",
-    "c:silver_ores"
+    "c:ores/silver"
   ]
 }

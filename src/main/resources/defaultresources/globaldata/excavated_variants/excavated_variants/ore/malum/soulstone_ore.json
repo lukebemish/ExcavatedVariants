@@ -10,8 +10,6 @@
     "malum:deepslate_soulstone_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/soulstone",
-    "c:ores/soulstone",
-    "c:soulstone_ores"
+    "c:ores/soulstone"
   ]
 }

@@ -9,8 +9,6 @@
     "techreborn:pyrite_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/pyrite",
-    "c:ores/pyrite",
-    "c:pyrite_ores"
+    "c:ores/pyrite"
   ]
 }

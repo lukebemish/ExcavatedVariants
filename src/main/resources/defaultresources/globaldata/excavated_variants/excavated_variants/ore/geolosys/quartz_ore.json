@@ -10,8 +10,6 @@
     "geolosys:deepslate_quartz_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/quartz",
-    "c:ores/quartz",
-    "c:quartz_ores"
+    "c:ores/quartz"
   ]
 }

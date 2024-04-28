@@ -9,8 +9,6 @@
     "miningmaster:dive_aquamarine_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/dive_aquamarine",
-    "c:ores/dive_aquamarine",
-    "c:dive_aquamarine_ores"
+    "c:ores/dive_aquamarine"
   ]
 }

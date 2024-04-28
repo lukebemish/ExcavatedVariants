@@ -9,8 +9,6 @@
     "techreborn:sheldonite_ore": "excavated_variants:minecraft/end_stone"
   },
   "tags": [
-    "forge:ores/sheldonite",
-    "c:ores/sheldonite",
-    "c:sheldonite_ores"
+    "c:ores/sheldonite"
   ]
 }

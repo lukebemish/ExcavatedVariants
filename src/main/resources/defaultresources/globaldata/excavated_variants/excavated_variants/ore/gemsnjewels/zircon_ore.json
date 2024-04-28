@@ -10,8 +10,6 @@
     "gemsnjewels:zircon_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/zircon",
-    "c:ores/zircon",
-    "c:zircon_ores"
+    "c:ores/zircon"
   ]
 }

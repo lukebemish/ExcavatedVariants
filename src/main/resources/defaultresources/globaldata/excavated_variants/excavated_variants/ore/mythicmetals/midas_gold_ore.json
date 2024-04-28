@@ -9,8 +9,6 @@
     "mythicmetals:midas_gold_ore": "excavated_variants:minecraft/netherrack"
   },
   "tags": [
-    "forge:ores/midas_gold",
-    "c:ores/midas_gold",
-    "c:midas_gold_ores"
+    "c:ores/midas_gold"
   ]
 }

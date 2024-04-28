@@ -10,8 +10,6 @@
     "mythicmetals:deepslate_unobtainium_ore": "excavated_variants:minecraft/deepslate"
   },
   "tags": [
-    "forge:ores/unobtainium",
-    "c:ores/unobtainium",
-    "c:unobtainium_ores"
+    "c:ores/unobtainium"
   ]
 }

@@ -9,8 +9,6 @@
     "sulfurpotassiummod:potassium_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/potassium",
-    "c:ores/potassium",
-    "c:potassium_ores"
+    "c:ores/potassium"
   ]
 }

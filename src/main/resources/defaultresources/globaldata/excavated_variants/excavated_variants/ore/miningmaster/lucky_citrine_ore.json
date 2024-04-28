@@ -9,8 +9,6 @@
     "miningmaster:lucky_citrine_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/lucky_citrine",
-    "c:ores/lucky_citrine",
-    "c:lucky_citrine_ores"
+    "c:ores/lucky_citrine"
   ]
 }

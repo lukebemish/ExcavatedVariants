@@ -10,11 +10,7 @@
     "geolosys:platinum_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/platinum",
     "c:ores/platinum",
-    "c:platinum_ores",
-    "forge:ores/osmium",
-    "c:ores/osmium",
-    "c:osmium_ores"
+    "c:ores/osmium"
   ]
 }

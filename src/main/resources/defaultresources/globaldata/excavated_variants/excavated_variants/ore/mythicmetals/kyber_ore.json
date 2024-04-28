@@ -10,8 +10,6 @@
     "mythicmetals:kyber_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/kyber",
-    "c:ores/kyber",
-    "c:kyber_ores"
+    "c:ores/kyber"
   ]
 }

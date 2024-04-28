@@ -10,8 +10,6 @@
     "mysticalagriculture:inferium_ore": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/inferium",
-    "c:ores/inferium",
-    "c:inferium_ores"
+    "c:ores/inferium"
   ]
 }

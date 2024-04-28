@@ -9,8 +9,6 @@
     "techreborn:tungsten_ore": "excavated_variants:minecraft/end_stone"
   },
   "tags": [
-    "forge:ores/tungsten",
-    "c:ores/tungsten",
-    "c:tungsten_ores"
+    "c:ores/tungsten"
   ]
 }

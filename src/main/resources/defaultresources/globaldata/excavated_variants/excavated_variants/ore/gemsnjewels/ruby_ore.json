@@ -10,8 +10,6 @@
     "gemsnjewels:ruby_ore_block": "excavated_variants:minecraft/stone"
   },
   "tags": [
-    "forge:ores/ruby",
-    "c:ores/ruby",
-    "c:ruby_ores"
+    "c:ores/ruby"
   ]
 }
