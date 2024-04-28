@@ -121,8 +121,6 @@ public class ExcavatedVariantsNeoForge {
     }
 
     public static void onCollectConfigTasks(final RegisterConfigurationTasksEvent event) {
-        if (!event.getListener().getConnection().isMemoryConnection()) {
-            event.register(new OresConfigTask());
-        }
+        event.register(new OresConfigTask());
     }
 }
