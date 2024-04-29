@@ -26,11 +26,10 @@
                         "restore-keys": "${{ runner.os }}-gradle-"
                     },
                     "name": "Cache",
-                    "uses": "actions/cache/restore@v4"
+                    "uses": "actions/cache@v4"
                 },
                 {
                     "with": {
-                        "cache-read-only": true,
                         "gradle-home-cache-cleanup": true
                     },
                     "name": "Setup Gradle",

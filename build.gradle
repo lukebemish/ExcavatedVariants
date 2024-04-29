@@ -23,6 +23,7 @@ managedVersioning {
             gradleJob {
                 name.set 'build'
                 javaVersion.set '21'
+                cacheReadOnly.set(false)
                 gradlew 'Build', 'build'
                 gradlew 'Publish', 'publish'
                 mavenSnapshot('github')
