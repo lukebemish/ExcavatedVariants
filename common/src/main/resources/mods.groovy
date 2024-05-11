@@ -5,19 +5,12 @@
 
 import modsdotgroovy.Dependency
 
-/*
- * Copyright (C) 2023 Luke Bemish and contributors
- * SPDX-License-Identifier: LGPL-3.0-or-later
- */
-
 ModsDotGroovy.make {
     modLoader = 'javafml'
     loaderVersion = '[1,)'
 
     license = 'LGPL-3.0-or-later'
     issueTrackerUrl = 'https://github.com/lukebemishprojects/ExcavatedVariants/issues'
-
-    def isFabriQuilt = platform == Platform.FABRIC || platform == Platform.QUILT
 
     mod {
         modId = this.buildProperties['mod_id']
@@ -38,18 +31,12 @@ ModsDotGroovy.make {
                 neoforge = ">=${this.libs.versions.neoforge}"
             }
 
-            if (isFabriQuilt) {
+            onFabric {
                 mod 'fabricloader', {
                     versionRange = ">=${this.libs.versions.fabric.loader}"
                 }
                 mod 'fabric-api', {
                     versionRange = ">=${this.libs.versions.fabric.api.split(/\+/)[0]}"
-                }
-            }
-
-            onQuilt {
-                mod 'quilt_loader', {
-                    versionRange = ">=${this.libs.versions.quilt.loader}"
                 }
             }
 
@@ -89,7 +76,7 @@ ModsDotGroovy.make {
                 ['config':'mixin.excavated_variants_neoforge.json']
         ]
     }
-    if (isFabriQuilt) {
+    onFabric {
         mixin = [
                 'mixin.excavated_variants.json',
                 'mixin.excavated_variants_fabriquilt.json'
