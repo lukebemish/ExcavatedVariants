@@ -16,9 +16,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class OreGenMapSavedData extends SavedData {
-    public static final String DATA_KEY = ExcavatedVariants.MOD_ID + "_ore_replacement";
+    private static final String DATA_KEY = ExcavatedVariants.MOD_ID + "_ore_replacement";
     private final Object2IntMap<ChunkKey> edgeCount;
-    private final Set<ChunkKey> ranMap = Collections.synchronizedSet(new HashSet<>());
+    private final Set<ChunkKey> ran = Collections.synchronizedSet(new HashSet<>());
 
     public OreGenMapSavedData() {
         Object2IntMap<ChunkKey> edgeMap = new Object2IntOpenHashMap<>();
@@ -30,18 +30,26 @@ public class OreGenMapSavedData extends SavedData {
         return edgeCount.getInt(chunkPos);
     }
 
+    public void incrEdgeCount(ChunkKey chunkPos) {
+        edgeCount.put(chunkPos, edgeCount.getInt(chunkPos) + 1);
+        this.setDirty();
+    }
+
     public void setEdgeCount(ChunkKey chunkPos, int count) {
+        if (count == 9) {
+            edgeCount.removeInt(chunkPos);
+        }
         edgeCount.put(chunkPos, count);
         this.setDirty();
     }
 
     public void chunkRan(ChunkKey chunkPos) {
-        ranMap.add(chunkPos);
+        ran.add(chunkPos);
         this.setDirty();
     }
 
     public boolean didChunkRun(ChunkKey chunkPos) {
-        return ranMap.contains(chunkPos);
+        return ran.contains(chunkPos);
     }
 
     public record ChunkKey(int x, int z) {}
@@ -58,7 +66,7 @@ public class OreGenMapSavedData extends SavedData {
                 data.edgeCount.put(new ChunkKey(edge1[i], edge2[i]), edge3[i]);
             }
             for (int i = 0; i < ran1.length; i++) {
-                data.ranMap.add(new ChunkKey(ran1[i], ran2[i]));
+                data.ran.add(new ChunkKey(ran1[i], ran2[i]));
             }
         }
         return data;
@@ -84,14 +92,14 @@ public class OreGenMapSavedData extends SavedData {
         ArrayList<Integer> edge3 = new ArrayList<>();
         ArrayList<Integer> ran1 = new ArrayList<>();
         ArrayList<Integer> ran2 = new ArrayList<>();
-        for (ChunkKey p : edgeCount.keySet()) {
-            edge1.add(p.x());
-            edge2.add(p.z());
-            edge3.add(edgeCount.getInt(p));
-        }
-        for (ChunkKey p : ranMap) {
+        for (ChunkKey p : ran) {
             ran1.add(p.x());
             ran2.add(p.z());
+        }
+        for (var e : edgeCount.object2IntEntrySet()) {
+            edge1.add(e.getKey().x());
+            edge2.add(e.getKey().z());
+            edge3.add(e.getIntValue());
         }
         tag.putIntArray("edge_1", edge1.stream().mapToInt(Integer::intValue).toArray());
         tag.putIntArray("edge_2", edge2.stream().mapToInt(Integer::intValue).toArray());

@@ -14,7 +14,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
 
 public class OreReplacer extends Feature<NoneFeatureConfiguration> {
     private static final int[] xs = new int[]{-1, 0, 1, 1, -1, -1, 0, 1};
@@ -43,8 +42,8 @@ public class OreReplacer extends Feature<NoneFeatureConfiguration> {
             newPos.setX(pos.getX() + xs[i] * 16);
             newPos.setZ(pos.getZ() + zs[i] * 16);
             OreGenMapSavedData.ChunkKey chunkPos = new OreGenMapSavedData.ChunkKey(newPos.getX(), newPos.getZ());
-            data.setEdgeCount(chunkPos, data.getEdgeCount(chunkPos) + 1);
-            if (data.getEdgeCount(chunkPos) == 8 && data.didChunkRun(chunkPos)) {
+            data.incrEdgeCount(chunkPos);
+            if (data.getEdgeCount(chunkPos) >= 8 && data.didChunkRun(chunkPos)) {
                 ChunkAccess chunkAccess = level.getChunk(newPos);
                 modifyChunk(chunkAccess, minY, maxY);
                 data.setEdgeCount(chunkPos, 9);
@@ -52,7 +51,7 @@ public class OreReplacer extends Feature<NoneFeatureConfiguration> {
         }
         OreGenMapSavedData.ChunkKey chunkPos = new OreGenMapSavedData.ChunkKey(pos.getX(), pos.getZ());
         data.chunkRan(chunkPos);
-        if (data.getEdgeCount(chunkPos) == 8) {
+        if (data.getEdgeCount(chunkPos) >= 8) {
             ChunkAccess chunkAccess = level.getChunk(pos);
             modifyChunk(chunkAccess, minY, maxY);
             data.setEdgeCount(chunkPos, 9);
@@ -81,9 +80,9 @@ public class OreReplacer extends Feature<NoneFeatureConfiguration> {
                     if (cache[i][y & 15][j] == null) {
                         cache[i][y & 15][j] = newState;
                     }
-                    @Nullable Ore ore = ((OreFound) newState.getBlock()).excavated_variants$getOre();
+                    Ore ore = ((OreFound) newState.getBlock()).excavated_variants$getOre();
                     if (ore != null) {
-                        @Nullable Stone oreStone = ((OreFound) newState.getBlock()).excavated_variants$getOreStone();
+                        Stone oreStone = ((OreFound) newState.getBlock()).excavated_variants$getOreStone();
                         for (int c = 0; c < as.length; c++) {
                             if (i + as[c] < 16 && i + as[c] >= 0 && j + bs[c] < 16 && j + bs[c] >= 0 && y + ys[c] >= SectionPos.sectionToBlockCoord(sectionIndex) && y + ys[c] < SectionPos.sectionToBlockCoord(sectionIndex + 1)) {
                                 BlockState thisState = cache[i + as[c]][y + ys[c] & 15][j + bs[c]];
