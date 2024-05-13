@@ -2,7 +2,6 @@ package dev.lukebemish.excavatedvariants.impl.worldgen;
 
 import dev.lukebemish.excavatedvariants.impl.ExcavatedVariants;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import it.unimi.dsi.fastutil.objects.Object2IntMaps;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -11,44 +10,44 @@ import net.minecraft.world.level.saveddata.SavedData;
 import org.jspecify.annotations.NonNull;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
 public class OreGenMapSavedData extends SavedData {
     private static final String DATA_KEY = ExcavatedVariants.MOD_ID + "_ore_replacement";
     private final Object2IntMap<ChunkKey> edgeCount;
-    private final Set<ChunkKey> ran = Collections.synchronizedSet(new HashSet<>());
+    private final Set<ChunkKey> ran = new HashSet<>();
 
     public OreGenMapSavedData() {
         Object2IntMap<ChunkKey> edgeMap = new Object2IntOpenHashMap<>();
         edgeMap.defaultReturnValue(0);
-        this.edgeCount = Object2IntMaps.synchronize(edgeMap);
+        this.edgeCount = edgeMap;
     }
 
-    public int getEdgeCount(ChunkKey chunkPos) {
+    public synchronized int getEdgeCount(ChunkKey chunkPos) {
         return edgeCount.getInt(chunkPos);
     }
 
-    public void incrEdgeCount(ChunkKey chunkPos) {
+    public synchronized void incrEdgeCount(ChunkKey chunkPos) {
         edgeCount.put(chunkPos, edgeCount.getInt(chunkPos) + 1);
         this.setDirty();
     }
 
-    public void setEdgeCount(ChunkKey chunkPos, int count) {
+    public synchronized void setEdgeCount(ChunkKey chunkPos, int count) {
         if (count == 9) {
             edgeCount.removeInt(chunkPos);
+        } else {
+            edgeCount.put(chunkPos, count);
+            this.setDirty();
         }
-        edgeCount.put(chunkPos, count);
-        this.setDirty();
     }
 
-    public void chunkRan(ChunkKey chunkPos) {
+    public synchronized void chunkRan(ChunkKey chunkPos) {
         ran.add(chunkPos);
         this.setDirty();
     }
 
-    public boolean didChunkRun(ChunkKey chunkPos) {
+    public synchronized boolean didChunkRun(ChunkKey chunkPos) {
         return ran.contains(chunkPos);
     }
 
@@ -86,7 +85,7 @@ public class OreGenMapSavedData extends SavedData {
     }
 
     @Override
-    public CompoundTag save(@NonNull CompoundTag tag, HolderLookup.Provider provider) {
+    public synchronized CompoundTag save(@NonNull CompoundTag tag, HolderLookup.Provider provider) {
         ArrayList<Integer> edge1 = new ArrayList<>();
         ArrayList<Integer> edge2 = new ArrayList<>();
         ArrayList<Integer> edge3 = new ArrayList<>();
