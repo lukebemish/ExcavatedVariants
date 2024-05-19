@@ -18,7 +18,7 @@ architectury_loom = "1.4.373"
 quilt_licenser = "2.0.1"
 
 dynassetgen = "5.1.2"
-defaultresources = "3.3.3"
+defaultresources = "3.4.2"
 
 mixinextras = "0.3.2"
 
@@ -48,9 +48,9 @@ dynassetgen_common = { module = "dev.lukebemish.dynamicassetgenerator:dynamicass
 dynassetgen_fabriquilt = { module = "dev.lukebemish.dynamicassetgenerator:dynamicassetgenerator-fabriquilt-1.20.4", version.ref = "dynassetgen" }
 dynassetgen_neoforge = { module = "dev.lukebemish.dynamicassetgenerator:dynamicassetgenerator-neoforge-1.20.4", version.ref = "dynassetgen" }
 
-defaultresources_common = { module = "dev.lukebemish.defaultresources:defaultresources-common-1.20.4", version.ref = "defaultresources" }
-defaultresources_fabriquilt = { module = "dev.lukebemish.defaultresources:defaultresources-fabriquilt-1.20.4", version.ref = "defaultresources" }
-defaultresources_neoforge = { module = "dev.lukebemish.defaultresources:defaultresources-neoforge-1.20.4", version.ref = "defaultresources" }
+defaultresources_common = { module = "dev.lukebemish.defaultresources:defaultresources-common", version.ref = "defaultresources" }
+defaultresources_fabriquilt = { module = "dev.lukebemish.defaultresources:defaultresources-fabriquilt", version.ref = "defaultresources" }
+defaultresources_neoforge = { module = "dev.lukebemish.defaultresources:defaultresources-neoforge", version.ref = "defaultresources" }
 
 mixinextras_common = { module = "io.github.llamalad7:mixinextras-common", version.ref = "mixinextras" }
 
