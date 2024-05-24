@@ -24,7 +24,6 @@
       block_id: 'regions_unexplored:chalk',
       types: [
         'stone',
-        'chalk',
       ],
     },
   ],
