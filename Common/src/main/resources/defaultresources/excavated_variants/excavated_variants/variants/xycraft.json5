@@ -13,7 +13,6 @@
       },
       block_id: 'xycraft_world:kivi',
       types: [
-        'kivi',
         'stone',
       ],
     },
@@ -32,12 +31,10 @@
       ],
       types: [
         'stone',
-		'kivi',
       ],
       stone: [
         'stone',
         'deepslate',
-		'kivi',
       ],
 	},
   ],
