@@ -1,0 +1,31 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'outer_end',
+  provided_stones: [
+    {
+      id: 'ancient_stone',
+      lang: {
+        en_us: 'Ancient Stone',
+      },
+      block_id: 'outer_end:ancient_stone',
+      types: [
+        'end',
+      ],
+    },
+    {
+      id: 'violite',
+      lang: {
+        en_us: 'Violite',
+      },
+      block_id: 'outer_end:violite',
+      types: [
+        'end',
+      ],
+    },
+  ],
+  provided_ores: [],
+}

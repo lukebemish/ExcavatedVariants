@@ -1,0 +1,32 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'regions_unexplored',
+  provided_stones: [
+    {
+      id: 'argillite',
+      lang: {
+        en_us: 'Argillite',
+      },
+      block_id: 'regions_unexplored:argillite',
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'chalk',
+      lang: {
+        en_us: 'Chalk',
+      },
+      block_id: 'regions_unexplored:chalk',
+      types: [
+        'stone',
+        'chalk',
+      ],
+    },
+  ],
+  provided_ores: [],
+}

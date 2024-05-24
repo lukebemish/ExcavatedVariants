@@ -1,0 +1,31 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'biggerreactors',
+  provided_stones: [],
+  provided_ores: [
+	{
+      id: 'uranium',
+      lang: {
+		en_us: 'Uranium Ore',
+      },
+      block_id: [
+        'biggerreactors:uranium_ore',
+        'biggerreactors:deepslate_uranium_ore',
+      ],
+      orename: [
+        'uranium_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+  ],
+}

@@ -1,0 +1,58 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'deepresonance',
+  provided_stones: [],
+  provided_ores: [
+	{
+      id: 'resonating',
+      lang: {
+        en_us: 'Resonating Ore',
+      },
+      block_id: [
+        'deepresonance:resonating_ore_stone',
+        'deepresonance:resonating_ore_deepslate',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+	},
+	{
+      id: 'nether_resonating',
+      lang: {
+        en_us: 'Resonating Ore',
+      },
+      block_id: [
+        'deepresonance:resonating_ore_nether',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+	},
+	{
+      id: 'end_resonating',
+      lang: {
+        en_us: 'Resonating Ore',
+      },
+      block_id: [
+        'deepresonance:resonating_ore_end',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+	},
+  ],
+}

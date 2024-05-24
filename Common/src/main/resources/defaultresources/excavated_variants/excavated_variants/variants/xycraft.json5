@@ -1,0 +1,43 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'xycraft_world',
+  provided_stones: [
+    {
+      id: 'kivi',
+      lang: {
+        en_us: 'Kivi',
+      },
+      block_id: 'xycraft_world:kivi',
+      types: [
+        'kivi',
+      ],
+    },
+  ],
+  provided_ores: [
+	{
+      id: 'aluminum',
+      lang: {
+        en_us: 'Aluminum Ore',
+        en_gb: 'Aluminium Ore',
+      },
+      block_id: [
+        'xycraft_world:aluminum_ore_stone',
+        'xycraft_world:aluminum_ore_deepslate',
+        'xycraft_world:aluminum_ore_kivi',
+      ],
+      types: [
+        'stone',
+		'kivi',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+		'kivi',
+      ],
+	},
+  ],
+}
