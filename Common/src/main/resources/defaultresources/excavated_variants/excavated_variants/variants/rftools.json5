@@ -9,6 +9,7 @@
   provided_ores: [
 	{
       id: 'dimshard',
+      orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',
       },
@@ -24,6 +25,7 @@
 	},
 	{
       id: 'nether_dimshard',
+      orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',
       },
@@ -39,6 +41,7 @@
 	},
 	{
       id: 'end_dimshard',
+      orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',
       },

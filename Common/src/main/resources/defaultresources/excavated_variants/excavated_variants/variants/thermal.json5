@@ -8,7 +8,7 @@
   provided_stones: [],
   provided_ores: [
 	{
-      id: 'apatite',
+      id: 'apatite_ore',
       lang: {
 		en_us: 'Apatite Ore',
       },
@@ -16,9 +16,6 @@
         'thermal:apatite_ore',
         'thermal:deepslate_apatite_ore',
       ],
-      orename: [
-        'apatite_ore',
-      ],
       types: [
         'stone',
       ],
@@ -28,7 +25,7 @@
       ],
     },
 	{
-      id: 'cinnabar',
+      id: 'cinnabar_ore',
       lang: {
 		en_us: 'Cinnabar Ore',
       },
@@ -36,9 +33,6 @@
         'thermal:cinnabar_ore',
         'thermal:deepslate_cinnabar_ore',
       ],
-      orename: [
-        'cinnabar_ore',
-      ],
       types: [
         'stone',
       ],
@@ -48,7 +42,7 @@
       ],
     },
 	{
-      id: 'niter',
+      id: 'niter_ore',
       lang: {
 		en_us: 'Niter Ore',
       },
@@ -56,9 +50,6 @@
         'thermal:niter_ore',
         'thermal:deepslate_niter_ore',
       ],
-      orename: [
-        'niter_ore',
-      ],
       types: [
         'stone',
       ],
@@ -68,7 +59,7 @@
       ],
     },
 	{
-      id: 'sulfur',
+      id: 'sulfur_ore',
       lang: {
 		en_us: 'Sulfur Ore',
       },
@@ -76,9 +67,6 @@
         'thermal:sulfur_ore',
         'thermal:deepslate_sulfur_ore',
       ],
-      orename: [
-        'sulfur_ore',
-      ],
       types: [
         'stone',
       ],
@@ -88,7 +76,7 @@
       ],
     },
 	{
-      id: 'tin',
+      id: 'tin_ore',
       lang: {
 		en_us: 'Tin Ore',
       },
@@ -96,9 +84,6 @@
         'thermal:tin_ore',
         'thermal:deepslate_tin_ore',
       ],
-      orename: [
-        'tin_ore',
-      ],
       types: [
         'stone',
       ],
@@ -108,7 +93,7 @@
       ],
     },
 	{
-      id: 'lead',
+      id: 'lead_ore',
       lang: {
 		en_us: 'Lead Ore',
       },
@@ -116,9 +101,6 @@
         'thermal:lead_ore',
         'thermal:deepslate_lead_ore',
       ],
-      orename: [
-        'lead_ore',
-      ],
       types: [
         'stone',
       ],
@@ -128,7 +110,7 @@
       ],
     },
 	{
-      id: 'silver',
+      id: 'silver_ore',
       lang: {
 		en_us: 'Slver Ore',
       },
@@ -136,9 +118,6 @@
         'thermal:silver_ore',
         'thermal:deepslate_silver_ore',
       ],
-      orename: [
-        'silver_ore',
-      ],
       types: [
         'stone',
       ],
@@ -148,7 +127,7 @@
       ],
     },
 	{
-      id: 'nickel',
+      id: 'nickel_ore',
       lang: {
 		en_us: 'Nickel Ore',
       },
@@ -156,9 +135,6 @@
         'thermal:nickel_ore',
         'thermal:deepslate_nickel_ore',
       ],
-      orename: [
-        'nickel_ore',
-      ],
       types: [
         'stone',
       ],
@@ -168,7 +144,7 @@
       ],
     },
 	{
-      id: 'ruby',
+      id: 'ruby_ore',
       lang: {
 		en_us: 'Ruby Ore',
       },
@@ -176,9 +152,6 @@
         'thermal:ruby_ore',
         'thermal:deepslate_ruby_ore',
       ],
-      orename: [
-        'ruby_ore',
-      ],
       types: [
         'stone',
       ],
@@ -188,16 +161,13 @@
       ],
     },
 	{
-      id: 'sapphire',
+      id: 'sapphire_ore',
       lang: {
 		en_us: 'Sapphire Ore',
       },
       block_id: [
         'thermal:sapphire_ore',
         'thermal:deepslate_sapphire_ore',
-      ],
-      orename: [
-        'sapphire_ore',
       ],
       types: [
         'stone',

@@ -9,6 +9,7 @@
   provided_ores: [
 	{
       id: 'resonating',
+      orename: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
       },
@@ -26,6 +27,7 @@
 	},
 	{
       id: 'nether_resonating',
+      orename: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
       },
@@ -41,6 +43,7 @@
 	},
 	{
       id: 'end_resonating',
+      orename: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
       },

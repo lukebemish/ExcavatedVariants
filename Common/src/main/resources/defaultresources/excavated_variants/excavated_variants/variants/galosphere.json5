@@ -47,9 +47,6 @@
         'galosphere:silver_ore',
         'galosphere:deepslate_silver_ore',
       ],
-      orename: [
-        'silver_ore',
-      ],
       types: [
         'stone',
       ],

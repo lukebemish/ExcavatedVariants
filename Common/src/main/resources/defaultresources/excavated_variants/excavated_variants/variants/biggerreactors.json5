@@ -8,16 +8,13 @@
   provided_stones: [],
   provided_ores: [
 	{
-      id: 'uranium',
+      id: 'uranium_ore',
       lang: {
 		en_us: 'Uranium Ore',
       },
       block_id: [
         'biggerreactors:uranium_ore',
         'biggerreactors:deepslate_uranium_ore',
-      ],
-      orename: [
-        'uranium_ore',
       ],
       types: [
         'stone',

@@ -44,21 +44,19 @@
       block_id: 'cavesanddepths:slate',
       types: [
         'slate',
-        'stone',
+		'stone',
       ],
     },
   ],
   provided_ores: [
 	{
       id: 'slate_coal',
+      orename: 'coal_ore',
       lang: {
 		en_us: 'Coal Ore',
       },
       block_id: [
         'cavesanddepths:slate_coal_ore',
-      ],
-      orename: [
-        'coal_ore',
       ],
       types: [
         'slate',
@@ -69,14 +67,12 @@
     },
 	{
       id: 'slate_copper',
+      orename: 'copper_ore',
       lang: {
 		en_us: 'Copper Ore',
       },
       block_id: [
         'cavesanddepths:slate_copper_ore',
-      ],
-      orename: [
-        'copper_ore',
       ],
       types: [
         'slate',
@@ -87,14 +83,12 @@
     },
 	{
       id: 'slate_iron',
+      orename: 'iron_ore',
       lang: {
 		en_us: 'Iron Ore',
       },
       block_id: [
         'cavesanddepths:slate_iron_ore',
-      ],
-      orename: [
-        'iron_ore',
       ],
       types: [
         'slate',
@@ -105,14 +99,12 @@
     },
 	{
       id: 'slate_gold',
+      orename: 'gold_ore',
       lang: {
 		en_us: 'Gold Ore',
       },
       block_id: [
         'cavesanddepths:slate_gold_ore',
-      ],
-      orename: [
-        'gold_ore',
       ],
       types: [
         'slate',
@@ -123,14 +115,12 @@
     },
 	{
       id: 'slate_diamond',
+      orename: 'diamond_ore',
       lang: {
 		en_us: 'Diamond Ore',
       },
       block_id: [
         'cavesanddepths:slate_diamond_ore',
-      ],
-      orename: [
-        'diamond_ore',
       ],
       types: [
         'slate',
