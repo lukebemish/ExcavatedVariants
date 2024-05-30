@@ -19,20 +19,21 @@
   ],
   provided_ores: [
 	{
-      id: 'aluminum',
+      id: 'aluminum_ore',
       lang: {
 		en_us: 'Aluminum Ore',
         en_gb: 'Aluminium Ore',
       },
       block_id: [
+        'xycraft_world:aluminum_ore_kivi',
         'xycraft_world:aluminum_ore_stone',
         'xycraft_world:aluminum_ore_deepslate',
-        'xycraft_world:aluminum_ore_kivi',
       ],
       types: [
         'stone',
       ],
       stone: [
+        'kivi',
         'stone',
         'deepslate',
       ],

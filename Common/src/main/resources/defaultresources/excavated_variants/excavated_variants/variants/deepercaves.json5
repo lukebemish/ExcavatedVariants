@@ -43,7 +43,6 @@
       },
       block_id: 'cavesanddepths:slate',
       types: [
-        'slate',
 		'stone',
       ],
     },
@@ -59,7 +58,7 @@
         'cavesanddepths:slate_coal_ore',
       ],
       types: [
-        'slate',
+        'stone',
       ],
       stone: [
         'slate',
@@ -75,7 +74,7 @@
         'cavesanddepths:slate_copper_ore',
       ],
       types: [
-        'slate',
+        'stone',
       ],
       stone: [
         'slate',
@@ -91,7 +90,7 @@
         'cavesanddepths:slate_iron_ore',
       ],
       types: [
-        'slate',
+        'stone',
       ],
       stone: [
         'slate',
@@ -107,7 +106,7 @@
         'cavesanddepths:slate_gold_ore',
       ],
       types: [
-        'slate',
+        'stone',
       ],
       stone: [
         'slate',
@@ -123,7 +122,7 @@
         'cavesanddepths:slate_diamond_ore',
       ],
       types: [
-        'slate',
+        'stone',
       ],
       stone: [
         'slate',
