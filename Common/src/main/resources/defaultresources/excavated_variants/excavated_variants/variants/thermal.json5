@@ -112,7 +112,7 @@
 	{
       id: 'silver_ore',
       lang: {
-		en_us: 'Slver Ore',
+		en_us: 'Silver Ore',
       },
       block_id: [
         'thermal:silver_ore',
