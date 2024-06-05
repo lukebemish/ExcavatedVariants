@@ -176,6 +176,23 @@
       ],
     },
     {
+      id: 'copper_ore',
+      block_id: [
+        'minecraft:copper_ore',
+        'minecraft:deepslate_copper_ore',
+      ],
+      lang: {
+        en_us: 'Copper Ore',
+      },
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+    {
       id: 'iron_ore',
       block_id: [
         'minecraft:iron_ore',
@@ -210,13 +227,13 @@
       ],
     },
     {
-      id: 'copper_ore',
+      id: 'diamond_ore',
       block_id: [
-        'minecraft:copper_ore',
-        'minecraft:deepslate_copper_ore',
+        'minecraft:diamond_ore',
+        'minecraft:deepslate_diamond_ore',
       ],
       lang: {
-        en_us: 'Copper Ore',
+        en_us: 'Diamond Ore',
       },
       types: [
         'stone',
@@ -244,40 +261,6 @@
       ],
     },
     {
-      id: 'lapis_ore',
-      block_id: [
-        'minecraft:lapis_ore',
-        'minecraft:deepslate_lapis_ore',
-      ],
-      lang: {
-        en_us: 'Lapis Lazuli Ore',
-      },
-      types: [
-        'stone',
-      ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
-    },
-    {
-      id: 'diamond_ore',
-      block_id: [
-        'minecraft:diamond_ore',
-        'minecraft:deepslate_diamond_ore',
-      ],
-      lang: {
-        en_us: 'Diamond Ore',
-      },
-      types: [
-        'stone',
-      ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
-    },
-    {
       id: 'redstone_ore',
       block_id: [
         'minecraft:redstone_ore',
@@ -295,18 +278,20 @@
       ],
     },
     {
-      id: 'quartz_ore',
+      id: 'lapis_ore',
       block_id: [
-        'minecraft:nether_quartz_ore',
+        'minecraft:lapis_ore',
+        'minecraft:deepslate_lapis_ore',
       ],
       lang: {
-        en_us: 'Quartz Ore',
+        en_us: 'Lapis Lazuli Ore',
       },
       types: [
-        'nether',
+        'stone',
       ],
       stone: [
-        'netherrack',
+        'stone',
+        'deepslate',
       ],
     },
     {
@@ -317,6 +302,21 @@
       ],
       lang: {
         en_us: 'Nether Gold Ore',
+      },
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+    {
+      id: 'quartz_ore',
+      block_id: [
+        'minecraft:nether_quartz_ore',
+      ],
+      lang: {
+        en_us: 'Quartz Ore',
       },
       types: [
         'nether',

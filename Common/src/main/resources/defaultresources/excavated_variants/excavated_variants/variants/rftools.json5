@@ -8,7 +8,7 @@
   provided_stones: [],
   provided_ores: [
 	{
-      id: 'dimshard',
+      id: 'dimensional_shard_ore',
       orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',
@@ -24,7 +24,7 @@
       ],
 	},
 	{
-      id: 'nether_dimshard',
+      id: 'nether_dimensional_shard_ore',
       orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',
@@ -40,7 +40,7 @@
       ],
 	},
 	{
-      id: 'end_dimshard',
+      id: 'end_dimensional_shard_ore',
       orename: 'dimensional_shard',
       lang: {
         en_us: 'Dimensional Shard',

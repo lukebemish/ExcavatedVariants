@@ -8,8 +8,7 @@
   provided_stones: [],
   provided_ores: [
 	{
-      id: 'resonating',
-      orename: 'resonating_ore',
+      id: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
       },
@@ -26,7 +25,7 @@
       ],
 	},
 	{
-      id: 'nether_resonating',
+      id: 'nether_resonating_ore',
       orename: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
@@ -42,7 +41,7 @@
       ],
 	},
 	{
-      id: 'end_resonating',
+      id: 'end_resonating_ore',
       orename: 'resonating_ore',
       lang: {
         en_us: 'Resonating Ore',
