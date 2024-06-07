@@ -49,7 +49,7 @@
   ],
   provided_ores: [
 	{
-      id: 'slate_coal',
+      id: 'slate_coal_ore',
       orename: 'coal_ore',
       lang: {
 		en_us: 'Coal Ore',
@@ -58,14 +58,13 @@
         'cavesanddepths:slate_coal_ore',
       ],
       types: [
-        'stone',
       ],
       stone: [
         'slate',
       ],
     },
 	{
-      id: 'slate_copper',
+      id: 'slate_copper_ore',
       orename: 'copper_ore',
       lang: {
 		en_us: 'Copper Ore',
@@ -74,14 +73,13 @@
         'cavesanddepths:slate_copper_ore',
       ],
       types: [
-        'stone',
       ],
       stone: [
         'slate',
       ],
     },
 	{
-      id: 'slate_iron',
+      id: 'slate_iron_ore',
       orename: 'iron_ore',
       lang: {
 		en_us: 'Iron Ore',
@@ -90,14 +88,13 @@
         'cavesanddepths:slate_iron_ore',
       ],
       types: [
-        'stone',
       ],
       stone: [
         'slate',
       ],
     },
 	{
-      id: 'slate_gold',
+      id: 'slate_gold_ore',
       orename: 'gold_ore',
       lang: {
 		en_us: 'Gold Ore',
@@ -106,14 +103,13 @@
         'cavesanddepths:slate_gold_ore',
       ],
       types: [
-        'stone',
       ],
       stone: [
         'slate',
       ],
     },
 	{
-      id: 'slate_diamond',
+      id: 'slate_diamond_ore',
       orename: 'diamond_ore',
       lang: {
 		en_us: 'Diamond Ore',
@@ -122,7 +118,51 @@
         'cavesanddepths:slate_diamond_ore',
       ],
       types: [
-        'stone',
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'slate_emerald_ore',
+      orename: 'emerald_ore',
+      lang: {
+		en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_emerald_ore',
+      ],
+      types: [
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'slate_lapis_ore',
+      orename: 'lapis_ore',
+      lang: {
+		en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_lapislazuli_ore',
+      ],
+      types: [
+      ],
+      stone: [
+        'slate',
+      ],
+    },
+	{
+      id: 'slate_redstone_ore',
+      orename: 'redstone_ore',
+      lang: {
+		en_us: 'Redstone Ore',
+      },
+      block_id: [
+        'cavesanddepths:slate_redstone_ore',
+      ],
+      types: [
       ],
       stone: [
         'slate',
