@@ -142,7 +142,7 @@
       id: 'slate_lapis_ore',
       orename: 'lapis_ore',
       lang: {
-		en_us: 'Emerald Ore',
+		en_us: 'Lapis Lazuli Ore',
       },
       block_id: [
         'cavesanddepths:slate_lapislazuli_ore',
