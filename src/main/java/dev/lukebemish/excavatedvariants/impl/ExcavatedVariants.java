@@ -216,9 +216,9 @@ public final class ExcavatedVariants {
                         if (modifier.variantFilter.matches(ore, stone, entry.getKey().location())) {
                             for (ResourceLocation tag : modifier.tags) {
                                 if (tag.getPath().startsWith("block/"))
-                                    planBlockTag(tag.withPath(tag.getPath().substring(7)), entry.getKey().location());
+                                    planBlockTag(tag.withPath(tag.getPath().substring("block/".length())), entry.getKey().location());
                                 else if (tag.getPath().startsWith("item/"))
-                                    planItemTag(tag.withPath(tag.getPath().substring(6)), entry.getKey().location());
+                                    planItemTag(tag.withPath(tag.getPath().substring("item/".length())), entry.getKey().location());
                                 else
                                     LOGGER.warn("Unknown tag type: " + tag);
                             }

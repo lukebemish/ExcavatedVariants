@@ -7,6 +7,7 @@ import dev.lukebemish.dynamicassetgenerator.api.sources.TagSupplier;
 import dev.lukebemish.dynamicassetgenerator.api.templates.TagFile;
 import dev.lukebemish.excavatedvariants.api.data.Ore;
 import dev.lukebemish.excavatedvariants.api.data.Stone;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagEntry;
@@ -30,15 +31,15 @@ public class MiningLevelTagHolder implements TagSupplier {
         toCheck.add(new CheckPair(fullId, ore, stone));
     }
 
-    private Set<ResourceLocation> getMiningLevels(ResourceGenerationContext context) {
-        return KnownTiers.KNOWN_TIERS.keySet().stream().map(TagKey::location).collect(Collectors.toSet());
+    private Set<ResourceLocation> getMiningLevels() {
+        return KnownTiers.KNOWN_TIERS.keySet().stream().map(TagKey::location).map(rl -> rl.withPrefix("block/")).collect(Collectors.toSet());
     }
 
     @Override
     public Map<ResourceLocation, Set<ResourceLocation>> apply(ResourceGenerationContext context) {
         Map<ResourceLocation, Set<ResourceLocation>> tags = new HashMap<>();
 
-        Set<ResourceLocation> tagNames = getMiningLevels(context);
+        Set<ResourceLocation> tagNames = getMiningLevels();
         Map<ResourceLocation, Set<ResourceLocation>> tagToMemberMap = tagNames.stream().collect(Collectors.toMap(Function.identity(), name -> getTagMembers(name, context), (l1, l2) -> {
             Set<ResourceLocation> out = new HashSet<>(l1);
             out.addAll(l2);
@@ -46,9 +47,11 @@ public class MiningLevelTagHolder implements TagSupplier {
         }));
 
         for (ResourceLocation tierTag : tagNames) {
+            System.out.println("Checking tag: "+tierTag);
             var members = tagToMemberMap.get(tierTag);
+            System.out.println("Members: "+members.stream().toList());
             for (var pair : toCheck) {
-                if (members.contains(pair.stone.block.location()) || pair.ore.getBlocks().keySet().stream().map(ResourceKey::location).allMatch(members::contains)) {
+                if (members.contains(pair.stone.block.location()) || pair.ore.getGeneratingBlocks().keySet().stream().filter(BuiltInRegistries.BLOCK::containsKey).map(ResourceKey::location).allMatch(members::contains)) {
                     tags.computeIfAbsent(tierTag, k->new HashSet<>()).add(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, pair.fullId));
                 }
             }
@@ -74,7 +77,7 @@ public class MiningLevelTagHolder implements TagSupplier {
                     if (file.replace())
                         members.clear();
                     file.values().forEach(value ->
-                            value.build(new TagEntry.Lookup<ResourceLocation>() {
+                            value.build(new TagEntry.Lookup<>() {
                                 @Override
                                 public ResourceLocation element(ResourceLocation elementLocation) {
                                     return elementLocation;
@@ -82,7 +85,7 @@ public class MiningLevelTagHolder implements TagSupplier {
 
                                 @Override
                                 public Collection<ResourceLocation> tag(ResourceLocation tagLocation) {
-                                    return getTagMembers(ResourceLocation.fromNamespaceAndPath(tagLocation.getNamespace(), type+"/"+tagLocation.getPath()), context);
+                                    return getTagMembers(ResourceLocation.fromNamespaceAndPath(tagLocation.getNamespace(), type + "/" + tagLocation.getPath()), context);
                                 }
                             }, members::add)
                     );
