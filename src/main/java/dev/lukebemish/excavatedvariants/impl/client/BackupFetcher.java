@@ -10,13 +10,13 @@ import java.io.InputStream;
 public class BackupFetcher {
     public static InputStream getBlockStateFile(ResourceLocation rl, ResourceGenerationContext context) {
         try {
-            ResourceLocation bsLocation = new ResourceLocation(rl.getNamespace(), "blockstates/" + rl.getPath() + ".json");
+            ResourceLocation bsLocation = ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), "blockstates/" + rl.getPath() + ".json");
             var resource = context.getResourceSource().getResource(bsLocation);
             if (resource == null) throw new IOException("Resource not found: "+bsLocation);
             return resource.get();
         } catch (IOException e) {
             try {
-                ResourceLocation testBS = new ResourceLocation(rl.getNamespace(), "excavated_variants_backups/blockstates" + rl.getPath() + ".json");
+                ResourceLocation testBS = ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), "excavated_variants_backups/blockstates" + rl.getPath() + ".json");
                 var resource = context.getResourceSource().getResource(testBS);
                 if (resource == null) throw new IOException("Resource not found: "+testBS);
                 return resource.get();
@@ -29,13 +29,13 @@ public class BackupFetcher {
 
     public static InputStream getModelFile(ResourceLocation rl, ResourceGenerationContext context) {
         try {
-            var modelLocation = new ResourceLocation(rl.getNamespace(), "models/" + rl.getPath() + ".json");
+            var modelLocation = ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), "models/" + rl.getPath() + ".json");
             var resource = context.getResourceSource().getResource(modelLocation);
             if (resource == null) throw new IOException("Resource not found: "+modelLocation);
             return resource.get();
         } catch (IOException e) {
             try {
-                ResourceLocation testBS = new ResourceLocation(rl.getNamespace(), "excavated_variants_backups/models/" + rl.getPath() + ".json");
+                ResourceLocation testBS = ResourceLocation.fromNamespaceAndPath(rl.getNamespace(), "excavated_variants_backups/models/" + rl.getPath() + ".json");
                 var resource = context.getResourceSource().getResource(testBS);
                 if (resource == null) throw new IOException("Resource not found: "+testBS);
                 return resource.get();

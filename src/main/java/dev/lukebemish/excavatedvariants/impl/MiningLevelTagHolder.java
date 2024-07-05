@@ -49,7 +49,7 @@ public class MiningLevelTagHolder implements TagSupplier {
             var members = tagToMemberMap.get(tierTag);
             for (var pair : toCheck) {
                 if (members.contains(pair.stone.block.location()) || pair.ore.getBlocks().keySet().stream().map(ResourceKey::location).allMatch(members::contains)) {
-                    tags.computeIfAbsent(tierTag, k->new HashSet<>()).add(new ResourceLocation(ExcavatedVariants.MOD_ID, pair.fullId));
+                    tags.computeIfAbsent(tierTag, k->new HashSet<>()).add(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, pair.fullId));
                 }
             }
         }
@@ -63,7 +63,7 @@ public class MiningLevelTagHolder implements TagSupplier {
     private Set<ResourceLocation> getTagMembers(ResourceLocation location, ResourceGenerationContext context) {
         String type = location.getPath().split("/")[0];
         Set<ResourceLocation> members = new HashSet<>();
-        var toRead = new ResourceLocation(location.getNamespace(), "tags/"+location.getPath()+".json");
+        var toRead = ResourceLocation.fromNamespaceAndPath(location.getNamespace(), "tags/"+location.getPath()+".json");
         var foundResources = context.getResourceSource().getResourceStack(toRead);
         for (var ioSupplier : foundResources) {
             try (var is = ioSupplier.get();
@@ -82,7 +82,7 @@ public class MiningLevelTagHolder implements TagSupplier {
 
                                 @Override
                                 public Collection<ResourceLocation> tag(ResourceLocation tagLocation) {
-                                    return getTagMembers(new ResourceLocation(tagLocation.getNamespace(), type+"/"+tagLocation.getPath()), context);
+                                    return getTagMembers(ResourceLocation.fromNamespaceAndPath(tagLocation.getNamespace(), type+"/"+tagLocation.getPath()), context);
                                 }
                             }, members::add)
                     );

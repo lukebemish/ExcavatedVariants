@@ -31,7 +31,7 @@ public class ItemModelPlanner implements PathAwareInputStreamSource, Resettable 
 
     @Override
     public @NonNull Set<ResourceLocation> getLocations(ResourceGenerationContext context) {
-        return ids.stream().map(fullId -> new ResourceLocation(ExcavatedVariants.MOD_ID, "models/item/" + fullId + ".json")).collect(Collectors.toSet());
+        return ids.stream().map(fullId -> ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "models/item/" + fullId + ".json")).collect(Collectors.toSet());
     }
 
     @Override
@@ -52,7 +52,7 @@ public class ItemModelPlanner implements PathAwareInputStreamSource, Resettable 
     }
 
     private synchronized void setupBaseModel(ResourceGenerationContext context) throws IOException {
-        var resource = context.getResourceSource().getResource(new ResourceLocation("models/block/block.json"));
+        var resource = context.getResourceSource().getResource(ResourceLocation.withDefaultNamespace("models/block/block.json"));
         if (resource == null) {
             if (!tried) {
                 tried = true;

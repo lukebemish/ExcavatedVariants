@@ -12,6 +12,7 @@ import net.minecraft.advancements.critereon.ItemSubPredicates;
 import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -293,10 +294,11 @@ public class ModifiedOreBlock extends DropExperienceBlock {
             BlockState targetState = target.defaultBlockState();
             List<ItemStack> items = ((BlockBehaviorAccessor) target).excavated_variants$getDrops(targetState, builder);
             ItemStack tool = builder.withParameter(LootContextParams.BLOCK_STATE, targetState).create(LootContextParamSets.BLOCK).getParamOrNull(LootContextParams.TOOL);
+            var silk = builder.getLevel().registryAccess().registryOrThrow(Registries.ENCHANTMENT).getHolderOrThrow(Enchantments.SILK_TOUCH);
             var predicate = ItemPredicate.Builder.item().withSubPredicate(
                     ItemSubPredicates.ENCHANTMENTS,
                     ItemEnchantmentsPredicate.enchantments(List.of(
-                            new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.atLeast(1))
+                            new EnchantmentPredicate(silk, MinMaxBounds.Ints.atLeast(1))
                     ))
             ).build();
             boolean isSilk = tool != null && predicate.test(tool);

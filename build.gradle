@@ -101,11 +101,12 @@ modsDotGroovy {
     gather {
         projectProperty('mod_id')
         projectProperty('mod_name')
+        projectProperty('mod_author')
     }
 }
 
 sourceSets.neoforge.modsDotGroovy {
-    platform = org.groovymc.modsdotgroovy.core.Platform.NEOFORGE
+    platform = org.groovymc.modsdotgroovy.types.core.Platform.NEOFORGE
     inferGather.set false
     multiplatform.from(':', 'main')
     gather {
@@ -116,7 +117,7 @@ sourceSets.neoforge.modsDotGroovy {
 }
 
 sourceSets.fabric.modsDotGroovy {
-    platform = org.groovymc.modsdotgroovy.core.Platform.FABRIC
+    platform = org.groovymc.modsdotgroovy.types.core.Platform.FABRIC
     inferGather.set false
     multiplatform.from(':', 'main')
     gather {

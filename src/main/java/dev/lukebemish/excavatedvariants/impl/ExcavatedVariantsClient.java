@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class ExcavatedVariantsClient {
     public static final LangBuilder LANG_BUILDER = new LangBuilder();
 
-    public static final AssetResourceCache ASSET_CACHE = ResourceCache.register(new AssetResourceCache(new ResourceLocation(ExcavatedVariants.MOD_ID, "assets")));
+    public static final AssetResourceCache ASSET_CACHE = ResourceCache.register(new AssetResourceCache(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "assets")));
 
     public static final ItemModelPlanner ITEM_MODEL_PLANNER = new ItemModelPlanner();
 
@@ -28,7 +28,7 @@ public class ExcavatedVariantsClient {
         ASSET_CACHE.planSource(new PathAwareInputStreamSource() {
             @Override
             public Set<ResourceLocation> getLocations(ResourceGenerationContext context) {
-                return LANG_BUILDER.languages().stream().map(s -> new ResourceLocation(ExcavatedVariants.MOD_ID+"_generated", "lang/" + s + ".json")).collect(Collectors.toSet());
+                return LANG_BUILDER.languages().stream().map(s -> ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID+"_generated", "lang/" + s + ".json")).collect(Collectors.toSet());
             }
 
             @Override

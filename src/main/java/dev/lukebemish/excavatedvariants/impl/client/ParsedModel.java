@@ -39,7 +39,7 @@ public final class ParsedModel {
         String found = map.get(texName);
         if (found == null) return null;
         if (found.startsWith("#")) return resolveTexture(map, found);
-        return ResourceLocation.of(found, ':');
+        return ResourceLocation.parse(found);
     }
 
     public static String resolveTextureSymbol(Map<String, String> map, String texName) {

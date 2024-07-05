@@ -27,7 +27,7 @@ public class TextureAtlasBuilder implements PathAwareInputStreamSource {
 
     @Override
     public @NonNull Set<ResourceLocation> getLocations(ResourceGenerationContext context) {
-        return Set.of(new ResourceLocation("minecraft", "atlases/blocks.json"));
+        return Set.of(ResourceLocation.fromNamespaceAndPath("minecraft", "atlases/blocks.json"));
     }
 
     public void addSource(ResourceLocation rl, TexSource source) {

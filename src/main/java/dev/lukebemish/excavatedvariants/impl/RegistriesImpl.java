@@ -26,10 +26,10 @@ import java.util.function.BiConsumer;
 public final class RegistriesImpl {
     private RegistriesImpl() {}
 
-    public static final ResourceKey<Registry<GroundType>> GROUND_TYPE_KEY = ResourceKey.createRegistryKey(new ResourceLocation(ExcavatedVariants.MOD_ID, "ground_type"));
-    public static final ResourceKey<Registry<Ore>> ORE_KEY = ResourceKey.createRegistryKey(new ResourceLocation(ExcavatedVariants.MOD_ID, "ore"));
-    public static final ResourceKey<Registry<Stone>> STONE_KEY = ResourceKey.createRegistryKey(new ResourceLocation(ExcavatedVariants.MOD_ID, "stone"));
-    public static final ResourceKey<Registry<Modifier>> MODIFIER_KEY = ResourceKey.createRegistryKey(new ResourceLocation(ExcavatedVariants.MOD_ID, "modifier"));
+    public static final ResourceKey<Registry<GroundType>> GROUND_TYPE_KEY = ResourceKey.createRegistryKey(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "ground_type"));
+    public static final ResourceKey<Registry<Ore>> ORE_KEY = ResourceKey.createRegistryKey(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "ore"));
+    public static final ResourceKey<Registry<Stone>> STONE_KEY = ResourceKey.createRegistryKey(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "stone"));
+    public static final ResourceKey<Registry<Modifier>> MODIFIER_KEY = ResourceKey.createRegistryKey(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "modifier"));
 
     public static final WritableRegistry<GroundType> GROUND_TYPE_REGISTRY = new MappedRegistry<>(GROUND_TYPE_KEY, Lifecycle.stable(), false);
     public static final WritableRegistry<Ore> ORE_REGISTRY = new MappedRegistry<>(ORE_KEY, Lifecycle.stable(), false);

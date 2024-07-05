@@ -15,8 +15,8 @@
     ]
   },
   "tags": [
-    "minecraft:blocks/mineable/pickaxe",
-    "c:blocks/ores",
-    "c:items/ores"
+    "minecraft:block/mineable/pickaxe",
+    "c:block/ores",
+    "c:item/ores"
   ]
 }

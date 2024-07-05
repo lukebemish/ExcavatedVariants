@@ -24,7 +24,7 @@ public class RecipePlanner implements PathAwareInputStreamSource {
         if (initialized) return;
         oreToBaseOreMap.keySet()
                 .forEach(tagKey -> {
-                    var location = new ResourceLocation(
+                    var location = ResourceLocation.fromNamespaceAndPath(
                             ExcavatedVariants.MOD_ID,
                             "recipes/ore_conversion/" + tagKey.location().getNamespace() + "/" + tagKey.location().getPath() + ".json"
                     );

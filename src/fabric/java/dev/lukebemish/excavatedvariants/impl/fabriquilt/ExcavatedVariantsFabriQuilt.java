@@ -41,7 +41,7 @@ public class ExcavatedVariantsFabriQuilt {
         ServerLifecycleEvents.SERVER_STARTING.register(server ->
                 OreFinderUtil.setupBlocks());
 
-        ResourceKey<PlacedFeature> confKey = ResourceKey.create(Registries.PLACED_FEATURE, new ResourceLocation(ExcavatedVariants.MOD_ID, "ore_replacer"));
+        ResourceKey<PlacedFeature> confKey = ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "ore_replacer"));
         BiomeModifications.create(confKey.location()).add(ModificationPhase.POST_PROCESSING, (x) -> true, context ->
                 context.getGenerationSettings().addFeature(GenerationStep.Decoration.TOP_LAYER_MODIFICATION, confKey));
 
@@ -57,7 +57,7 @@ public class ExcavatedVariantsFabriQuilt {
             ServerConfigurationNetworking.send(handler, packet);
         });
 
-        Registry.register(BuiltInRegistries.FEATURE, new ResourceLocation(ExcavatedVariants.MOD_ID, "ore_replacer"), new OreReplacer());
+        Registry.register(BuiltInRegistries.FEATURE, ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "ore_replacer"), new OreReplacer());
     }
 
     public static void cleanup() {

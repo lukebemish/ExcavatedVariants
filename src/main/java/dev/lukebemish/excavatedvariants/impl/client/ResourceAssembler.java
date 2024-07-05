@@ -76,7 +76,7 @@ public class ResourceAssembler implements PathAwareInputStreamSource {
         List<ResourceLocation> models = new ArrayList<>();
         for (ModelData newStoneModel : newStoneModels) {
             for (TexFaceProvider oreModel : oreModels) {
-                ResourceLocation modelLocation = new ResourceLocation(ExcavatedVariants.MOD_ID, "block/"+future.fullId+"__"+counter);
+                ResourceLocation modelLocation = ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "block/"+future.fullId+"__"+counter);
                 assembleModel(modelLocation, oreModel, oldStoneModel, newStoneModel, future.foundSourceStone);
                 models.add(modelLocation);
                 counter += 1;
@@ -91,7 +91,7 @@ public class ResourceAssembler implements PathAwareInputStreamSource {
         var encoded = BlockStateData.CODEC.encodeStart(JsonOps.INSTANCE, assembled).result();
         if (encoded.isPresent()) {
             var json = ExcavatedVariants.GSON.toJson(encoded.get());
-            addResource(new ResourceLocation(ExcavatedVariants.MOD_ID, "blockstates/"+fullId+".json"),
+            addResource(ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, "blockstates/"+fullId+".json"),
                     (resourceLocation, c) -> () -> new ByteArrayInputStream(json.getBytes(StandardCharsets.UTF_8)));
         } else {
             ExcavatedVariants.LOGGER.warn("Failed to encode blockstate for "+fullId);
@@ -113,7 +113,7 @@ public class ResourceAssembler implements PathAwareInputStreamSource {
         int[] counter = new int[] {0};
         newStone.produceTextures((name, texture, faces) -> {
             counter[0] += 1;
-            ResourceLocation location = new ResourceLocation(modelLocation.getNamespace(), modelLocation.getPath()+"__"+counter[0]);
+            ResourceLocation location = ResourceLocation.fromNamespaceAndPath(modelLocation.getNamespace(), modelLocation.getPath()+"__"+counter[0]);
             modelTextureTranslations.put(name, location);
 
             if (faces.isEmpty()) {
@@ -124,7 +124,7 @@ public class ResourceAssembler implements PathAwareInputStreamSource {
 
         // Make the actual model here...
         JsonElement model = newStone.assembleModel(Collections.unmodifiableMap(modelTextureTranslations));
-        ResourceLocation modelJsonLocation = new ResourceLocation(modelLocation.getNamespace(), "models/"+modelLocation.getPath()+".json");
+        ResourceLocation modelJsonLocation = ResourceLocation.fromNamespaceAndPath(modelLocation.getNamespace(), "models/"+modelLocation.getPath()+".json");
         addResource(modelJsonLocation, (resourceLocation, c) -> () -> new ByteArrayInputStream(model.toString().getBytes(StandardCharsets.UTF_8)));
 
         // And now we'll generate the ore textures

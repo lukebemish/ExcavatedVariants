@@ -58,7 +58,7 @@ Placed in `globalresources/[folder/pack]/globaldata/[namespace]/excavated_varian
 
 Placed in `globalresources/[folder/pack]/globaldata/[namespace]/excavated_variants/modifier`. They are JSON files with the following structure:
 
-* `tags`: (optional) a list of tags that variants matching the filter will be added to. Can be either block or item tags, in the format `"namespace:[blocks/items]/path"`.
+* `tags`: (optional) a list of tags that variants matching the filter will be added to. Can be either block or item tags, in the format `"namespace:[block/item]/path"`.
 * `flags`: (optional) a list of flags from the following set that will be applied to matching variants:
   * `"original_without_silk"`: the variant should drop whatever its original block would drop, unless silk touch is used. Note that this flag is irrelevant for any ore blocks that have the behaviour of dropping "raw ore chunks" or the like, and is only relevant for when the original block drops itself.
   * `"original_always"`: the variant should always drop whatever its original block would drop, even if silk touch is used.

@@ -42,7 +42,7 @@ public final class ExcavatedVariants {
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
     public static final List<Supplier<Item>> ITEMS = new ArrayList<>();
     private static @Nullable ModConfig CONFIG;
-    public static final DataResourceCache DATA_CACHE = ResourceCache.register(new DataResourceCache(new ResourceLocation(MOD_ID, "data")));
+    public static final DataResourceCache DATA_CACHE = ResourceCache.register(new DataResourceCache(id("data")));
     private static @Nullable Map<Ore, List<Stone>> NEW_VARIANTS_MAP;
     private static final List<VariantFuture> NEW_VARIANTS = new ArrayList<>();
     public static final Map<ResourceKey<Block>, List<VariantFuture>> NEEDED_KEYS = new IdentityHashMap<>();
@@ -123,7 +123,7 @@ public final class ExcavatedVariants {
             for (Stone stone : stones) {
                 String fullId = computeFullId(ore, stone);
                 VariantFuture future = new VariantFuture(fullId, ore, stone);
-                ore.addPossibleVariant(stone, new ResourceLocation(ExcavatedVariants.MOD_ID, fullId));
+                ore.addPossibleVariant(stone, id(fullId));
                 List<ResourceKey<Block>> keys = new ArrayList<>();
                 for (Map.Entry<ResourceKey<Block>, ResourceKey<Stone>> blockEntry : ore.getGeneratingBlocks().entrySet()) {
                     ResourceKey<Block> key = blockEntry.getKey();
@@ -160,14 +160,16 @@ public final class ExcavatedVariants {
                 Map<ResourceLocation, Set<ResourceLocation>> output = new HashMap<>();
                 for (var entry : map.entrySet()) {
                     for (var rl : entry.getValue()) {
-                        if (entry.getKey().getPath().startsWith("blocks/")) {
+                        if (entry.getKey().getPath().startsWith("block/")) {
                             if (!BuiltInRegistries.BLOCK.containsKey(rl)) {
                                 continue;
                             }
-                        } else if (entry.getKey().getPath().startsWith("items/")) {
+                        } else if (entry.getKey().getPath().startsWith("item/")) {
                             if (!BuiltInRegistries.ITEM.containsKey(rl)) {
                                 continue;
                             }
+                        } else {
+                            LOGGER.warn("Unknown tag type: " + entry.getKey());
                         }
                         output.computeIfAbsent(entry.getKey(), k -> new HashSet<>()).add(rl);
                     }
@@ -213,10 +215,12 @@ public final class ExcavatedVariants {
                         var stone = Objects.requireNonNull(RegistriesImpl.STONE_REGISTRY.get(entry.getValue()));
                         if (modifier.variantFilter.matches(ore, stone, entry.getKey().location())) {
                             for (ResourceLocation tag : modifier.tags) {
-                                if (tag.getPath().startsWith("blocks/"))
+                                if (tag.getPath().startsWith("block/"))
                                     planBlockTag(tag.withPath(tag.getPath().substring(7)), entry.getKey().location());
-                                else if (tag.getPath().startsWith("items/"))
+                                else if (tag.getPath().startsWith("item/"))
                                     planItemTag(tag.withPath(tag.getPath().substring(6)), entry.getKey().location());
+                                else
+                                    LOGGER.warn("Unknown tag type: " + tag);
                             }
                         }
                     }
@@ -252,7 +256,7 @@ public final class ExcavatedVariants {
 
         if (getConfig().addConversionRecipes) {
             for (VariantFuture future : COMPLETE_VARIANTS) {
-                planItemTag(future.ore.getConvertibleTagKey().location(), new ResourceLocation(ExcavatedVariants.MOD_ID, future.fullId));
+                planItemTag(future.ore.getConvertibleTagKey().location(), id(future.fullId));
                 RECIPE_PLANNER.oreToBaseOreMap.put(future.ore.getConvertibleTagKey(), Objects.requireNonNull(future.foundOreKey));
             }
         }
@@ -261,7 +265,7 @@ public final class ExcavatedVariants {
 
         for (VariantFuture future : COMPLETE_VARIANTS) {
             tierHolder.add(future.fullId, future.ore, future.stone);
-            var id = new ResourceLocation(ExcavatedVariants.MOD_ID, future.fullId);
+            var id = id(future.fullId);
 
             for (ResourceLocation tag : future.ore.tags) {
                 planCombinedTag(tag, id);
@@ -281,7 +285,7 @@ public final class ExcavatedVariants {
     }
 
     public static ResourceLocation id(String path) {
-        return new ResourceLocation(MOD_ID, path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 
     public static String computeFullId(ResourceLocation ore, ResourceLocation stone) {
@@ -317,11 +321,11 @@ public final class ExcavatedVariants {
     }
 
     private static ResourceLocation rlToBlock(ResourceLocation rl) {
-        return rl.withPrefix("blocks/");
+        return rl.withPrefix("block/");
     }
 
     private static ResourceLocation rlToItem(ResourceLocation rl) {
-        return rl.withPrefix("items/");
+        return rl.withPrefix("item/");
     }
 
     public static ModConfig getConfig() {
@@ -334,7 +338,7 @@ public final class ExcavatedVariants {
     public static void registerBlockAndItem(BiConsumer<ResourceLocation, Block> blockRegistrar, BiFunction<ResourceLocation, Supplier<Item>, Supplier<Item>> itemRegistrar, VariantFuture future) {
         if (!future.done) {
             future.done = true;
-            ResourceLocation rlToReg = new ResourceLocation(ExcavatedVariants.MOD_ID, future.fullId);
+            ResourceLocation rlToReg = ResourceLocation.fromNamespaceAndPath(ExcavatedVariants.MOD_ID, future.fullId);
             ModifiedOreBlock.setupStaticWrapper(future);
             ModifiedOreBlock b = new ModifiedOreBlock(future);
             blockRegistrar.accept(rlToReg, b);
