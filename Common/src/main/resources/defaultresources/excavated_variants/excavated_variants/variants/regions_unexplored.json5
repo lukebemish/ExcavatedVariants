@@ -7,7 +7,7 @@
   mod_id: 'regions_unexplored',
   provided_stones: [
     {
-      id: 'argillite',
+      id: 'regions_unexplored_argillite',
       lang: {
         en_us: 'Argillite',
       },
@@ -17,7 +17,7 @@
       ],
     },
     {
-      id: 'chalk',
+      id: 'regions_unexplored_chalk',
       lang: {
         en_us: 'Chalk',
       },

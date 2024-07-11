@@ -7,7 +7,7 @@
   mod_id: 'cavesanddepths',
   provided_stones: [
     {
-      id: 'chert',
+      id: 'deepercaves_chert',
       lang: {
         en_us: 'Chert',
       },
@@ -17,7 +17,7 @@
       ],
     },
     {
-      id: 'chalkstone',
+      id: 'deepercaves_chalkstone',
       lang: {
         en_us: 'Chalkstone',
       },
@@ -27,7 +27,7 @@
       ],
     },
     {
-      id: 'mudstone',
+      id: 'deepercaves_mudstone',
       lang: {
         en_us: 'Mudstone',
       },
@@ -37,7 +37,7 @@
       ],
     },
     {
-      id: 'slate',
+      id: 'deepercaves_slate',
       lang: {
         en_us: 'Slate',
       },

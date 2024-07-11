@@ -7,7 +7,7 @@
   mod_id: 'galosphere',
   provided_stones: [
     {
-      id: 'pastel_pink_salt',
+      id: 'galosphere_pastel_pink_salt',
       lang: {
         en_us: 'Pastel Pink Salt',
       },
@@ -17,7 +17,7 @@
       ],
     },
     {
-      id: 'pink_salt',
+      id: 'galosphere_pink_salt',
       lang: {
         en_us: 'Pink Salt',
       },
@@ -27,7 +27,7 @@
       ],
     },
     {
-      id: 'rose_pink_salt',
+      id: 'galosphere_rose_pink_salt',
       lang: {
         en_us: 'Rose Pink Salt',
       },

@@ -7,7 +7,7 @@
   mod_id: 'xycraft_world',
   provided_stones: [
     {
-      id: 'kivi',
+      id: 'xycraft_kivi',
       lang: {
         en_us: 'Kivi',
       },

@@ -7,7 +7,7 @@
   mod_id: 'outer_end',
   provided_stones: [
     {
-      id: 'ancient_stone',
+      id: 'outer_end_ancient_stone',
       lang: {
         en_us: 'Ancient Stone',
       },
@@ -17,7 +17,7 @@
       ],
     },
     {
-      id: 'violite',
+      id: 'outer_end_violite',
       lang: {
         en_us: 'Violite',
       },
