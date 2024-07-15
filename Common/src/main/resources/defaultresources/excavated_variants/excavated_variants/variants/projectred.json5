@@ -1,0 +1,134 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'projectred_exploration',
+  provided_stones: [
+    {
+      id: 'projectred_basalt',
+      lang: {
+        en_us: 'Basalt',
+      },
+      block_id: 'projectred_exploration:basalt',
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'projectred_marble',
+      lang: {
+        en_us: 'Marble',
+      },
+      block_id: 'projectred_exploration:marble',
+      types: [
+        'stone',
+      ],
+    },
+  ],
+  provided_ores: [
+	{
+      id: 'ruby_ore',
+      lang: {
+		en_us: 'Ruby Ore',
+      },
+      block_id: [
+        'projectred_exploration:ruby_ore',
+        'projectred_exploration:deepslate_ruby_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'sapphire_ore',
+      lang: {
+		en_us: 'Sapphire Ore',
+      },
+      block_id: [
+        'projectred_exploration:sapphire_ore',
+        'projectred_exploration:deepslate_sapphire_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'peridot_ore',
+      lang: {
+		en_us: 'Peridot Ore',
+      },
+      block_id: [
+        'projectred_exploration:peridot_ore',
+        'projectred_exploration:deepslate_peridot_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'tin_ore',
+      lang: {
+		en_us: 'Tin Ore',
+      },
+      block_id: [
+        'projectred_exploration:tin_ore',
+        'projectred_exploration:deepslate_tin_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'silver_ore',
+      lang: {
+		en_us: 'Silver Ore',
+      },
+      block_id: [
+        'projectred_exploration:silver_ore',
+        'projectred_exploration:deepslate_silver_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'electrotine_ore',
+      lang: {
+		en_us: 'Electrotine Ore',
+      },
+      block_id: [
+        'thermal:electrotine_ore',
+        'thermal:deepslate_electrotine_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+  ],
+}
