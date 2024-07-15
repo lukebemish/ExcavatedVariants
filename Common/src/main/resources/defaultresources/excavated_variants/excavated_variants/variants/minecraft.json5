@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2023 Luke Bemish and contributors
  * SPDX-License-Identifier: LGPL-3.0-or-later
-*/
+ */
 
 {
   mod_id: 'minecraft',
@@ -160,6 +160,10 @@
   provided_ores: [
     {
       id: 'coal_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
       block_id: [
         'minecraft:coal_ore',
         'minecraft:deepslate_coal_ore',
@@ -170,30 +174,13 @@
       types: [
         'stone',
       ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
-    },
-    {
-      id: 'copper_ore',
-      block_id: [
-        'minecraft:copper_ore',
-        'minecraft:deepslate_copper_ore',
-      ],
-      lang: {
-        en_us: 'Copper Ore',
-      },
-      types: [
-        'stone',
-      ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
     },
     {
       id: 'iron_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
       block_id: [
         'minecraft:iron_ore',
         'minecraft:deepslate_iron_ore',
@@ -204,13 +191,13 @@
       types: [
         'stone',
       ],
+    },
+    {
+      id: 'gold_ore',
       stone: [
         'stone',
         'deepslate',
       ],
-    },
-    {
-      id: 'gold_ore',
       block_id: [
         'minecraft:gold_ore',
         'minecraft:deepslate_gold_ore',
@@ -221,30 +208,46 @@
       types: [
         'stone',
       ],
+    },
+    {
+      id: 'nether_gold_ore',
+      orename: 'gold_ore',
+      stone: [
+        'netherrack',
+      ],
+      block_id: [
+        'minecraft:nether_gold_ore',
+      ],
+      lang: {
+        en_us: 'Nether Gold Ore',
+      },
+      types: [
+        'nether',
+      ],
+    },
+    {
+      id: 'copper_ore',
       stone: [
         'stone',
         'deepslate',
       ],
-    },
-    {
-      id: 'diamond_ore',
       block_id: [
-        'minecraft:diamond_ore',
-        'minecraft:deepslate_diamond_ore',
+        'minecraft:copper_ore',
+        'minecraft:deepslate_copper_ore',
       ],
       lang: {
-        en_us: 'Diamond Ore',
+        en_us: 'Copper Ore',
       },
       types: [
         'stone',
       ],
+    },
+    {
+      id: 'emerald_ore',
       stone: [
         'stone',
         'deepslate',
       ],
-    },
-    {
-      id: 'emerald_ore',
       block_id: [
         'minecraft:emerald_ore',
         'minecraft:deepslate_emerald_ore',
@@ -255,30 +258,13 @@
       types: [
         'stone',
       ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
-    },
-    {
-      id: 'redstone_ore',
-      block_id: [
-        'minecraft:redstone_ore',
-        'minecraft:deepslate_redstone_ore',
-      ],
-      lang: {
-        en_us: 'Redstone Ore',
-      },
-      types: [
-        'stone',
-      ],
-      stone: [
-        'stone',
-        'deepslate',
-      ],
     },
     {
       id: 'lapis_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
       block_id: [
         'minecraft:lapis_ore',
         'minecraft:deepslate_lapis_ore',
@@ -289,29 +275,29 @@
       types: [
         'stone',
       ],
+    },
+    {
+      id: 'diamond_ore',
       stone: [
         'stone',
         'deepslate',
       ],
-    },
-    {
-      id: 'nether_gold_ore',
-      orename: 'gold_ore',
       block_id: [
-        'minecraft:nether_gold_ore',
+        'minecraft:diamond_ore',
+        'minecraft:deepslate_diamond_ore',
       ],
       lang: {
-        en_us: 'Nether Gold Ore',
+        en_us: 'Diamond Ore',
       },
       types: [
-        'nether',
-      ],
-      stone: [
-        'netherrack',
+        'stone',
       ],
     },
     {
       id: 'quartz_ore',
+      stone: [
+        'netherrack',
+      ],
       block_id: [
         'minecraft:nether_quartz_ore',
       ],
@@ -321,8 +307,22 @@
       types: [
         'nether',
       ],
+    },
+    {
+      id: 'redstone_ore',
       stone: [
-        'netherrack',
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'minecraft:redstone_ore',
+        'minecraft:deepslate_redstone_ore',
+      ],
+      lang: {
+        en_us: 'Redstone Ore',
+      },
+      types: [
+        'stone',
       ],
     },
   ],
