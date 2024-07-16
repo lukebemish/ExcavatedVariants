@@ -119,8 +119,8 @@
 		en_us: 'Electrotine Ore',
       },
       block_id: [
-        'thermal:electrotine_ore',
-        'thermal:deepslate_electrotine_ore',
+        'projectred_exploration:electrotine_ore',
+        'projectred_exploration:deepslate_electrotine_ore',
       ],
       types: [
         'stone',
