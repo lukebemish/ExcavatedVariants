@@ -26,7 +26,7 @@ public class RecipePlanner implements PathAwareInputStreamSource {
                 .forEach(tagKey -> {
                     var location = ResourceLocation.fromNamespaceAndPath(
                             ExcavatedVariants.MOD_ID,
-                            "recipes/ore_conversion/" + tagKey.location().getNamespace() + "/" + tagKey.location().getPath() + ".json"
+                            "recipe/ore_conversion/" + tagKey.location().getNamespace() + "/" + tagKey.location().getPath() + ".json"
                     );
                     recipeToTagMap.put(location, tagKey);
                 });
