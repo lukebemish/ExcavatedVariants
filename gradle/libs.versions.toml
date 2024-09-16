@@ -16,7 +16,7 @@ modpublish = "0.5.1"
 
 managedversioning = "1.2.19"
 
-quilt_loader = "0.25.0"
+quilt_loader = "0.26.4"
 
 dynassetgen = "6.1.1"
 defaultresources = "3.6.0"
