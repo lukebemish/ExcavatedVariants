@@ -8,7 +8,7 @@ fabric_loader = "0.15.11"
 fabric_api = "0.102.1+1.21.1"
 
 fabric_mixin = "0.13.3+mixin.0.8.5"
-mixinextras = "0.3.5"
+mixinextras = "0.4.1"
 
 modsdotgroovy = "2.0.0-beta.30"
 
