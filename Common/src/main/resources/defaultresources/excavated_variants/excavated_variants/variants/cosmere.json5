@@ -1,0 +1,147 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ */
+
+{
+  mod_id: 'cosmere',
+  provided_stones: [],
+  provided_ores: [
+    {
+      id: 'aluminum_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:aluminum_ore',
+        'cosmere:deepslate_aluminum_ore',
+      ],
+      lang: {
+        en_us: 'Aluminum Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'cadmium_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:cadmium_ore',
+        'cosmere:deepslate_cadmium_ore',
+      ],
+      lang: {
+        en_us: 'Cadmium Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'chromium_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:chromium_ore',
+        'cosmere:deepslate_chromium_ore',
+      ],
+      lang: {
+        en_us: 'Chromium Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'lead_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:lead_ore',
+        'cosmere:deepslate_lead_ore',
+      ],
+      lang: {
+        en_us: 'Lead Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'nickel_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:nickel_ore',
+        'cosmere:deepslate_nickel_ore',
+      ],
+      lang: {
+        en_us: 'Nickel Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'silver_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:silver_ore',
+        'cosmere:deepslate_silver_ore',
+      ],
+      lang: {
+        en_us: 'Silver Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'tin_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:tin_ore',
+        'cosmere:deepslate_tin_ore',
+      ],
+      lang: {
+        en_us: 'Tin Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+    {
+      id: 'zinc_ore',
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+      block_id: [
+        'cosmere:zinc_ore',
+        'cosmere:deepslate_zinc_ore',
+      ],
+      lang: {
+        en_us: 'Zinc Ore',
+      },
+      types: [
+        'stone',
+      ],
+    },
+  ],
+}
